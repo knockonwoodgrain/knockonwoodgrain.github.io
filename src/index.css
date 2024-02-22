@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@font-face {
+  font-family: Gambarino;
+  src: url("Fonts/Gambarino-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Playfair Display Semibold Italic;
+  src: url("Fonts/PlayfairDisplay-SemiBoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: Playfair Display Bold;
+  src: url("Fonts/PlayfairDisplay-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica Bold;
+  src: url("Fonts/HelveticaNeueLTStd-Bd.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica Black;
+  src: url("Fonts/HelveticaNeueLTStd-Blk.otf");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica Extended;
+  src: url("Fonts/HelveticaNeueLTStd-BlkEx.otf");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica;
+  src: url("Fonts/HelveticaNeueLTStd-Roman.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Univers;
+  src: url("Fonts/UniversLTStd.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Univers Bold;
+  src: url("Fonts/UniversLTStd-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Univers;
+  src: url("Fonts/UniversLTStd-Light.otf");
+  font-weight: lighter;
+  font-style: normal;
+}
+::selection {
+  background-color: rgba(255, 255, 255, 0.164);
+  text-shadow: 0 0px 5px rgb(197, 197, 197);
+}
+::-webkit-scrollbar {
+  background-color: black;
+  box-shadow: var(--halation);
+  border: 0.1vw solid white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  box-shadow: var(--halation);
+  border: var(--whiteborder);
+}
+:root {
+  --bfont: "IBM Plex Sans", sans-serif;
+  --tfont: "Gambarino";
+  --halation: 0 0px 7px rgb(255, 0, 0);
+  --whiteborder: 0.2vw solid white;
+  --icon: rgba(200, 200, 200, 1);
+  --category: rgba(60, 60, 60, 1);
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+body {
+  text-shadow: var(--halation);
+  background-color: black;
+  color: white;
+  font-family: var(--bfont);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
+#BgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -5;
+}
+.title {
+  max-width: fit-content;
+  font-size: 7vw;
+  font-family: var(--tfont);
+  color: white;
+  padding-top: 0.5vw;
+}
+.textnphoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60vw;
+  font-size: 1.4vw;
+  padding: 0;
+}
+.para {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 38vw;
+  font-size: 1.4vw;
+  padding: 0;
+}
+.me {
+  width: 15vw;
+  height: 15vw;
+  box-shadow: var(--halation);
+  margin-right: 0.6vw;
+  border: var(--whiteborder);
+}
+.icon {
+  height: 2.3vw;
+  box-shadow: var(--halation);
+  margin-right: 0.6vw;
+  border: var(--whiteborder);
+  fill: white;
+  padding: 0.5vw;
+  color: black;
+}
+.Contact {
+  display: flex;
+  max-width: fit-content;
+  margin-top: 1vw;
+  margin-bottom: 0.2vw;
+  font-size: 1.9vw;
+  font-family: var(--bfont);
+  font-weight: 700;
+}
+a {
+  width: fit-content;
+  display: inline;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  box-sizing: content-box;
+}
+.iconpanel {
+  flex-direction: row;
+}
+.Gallery,
+.Projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 18.5vw;
+  padding-right: 18.5vw;
+  padding-top: 1vw;
+  max-width: 100vw;
+}
+.GalleryTitle,
+.ProjectTitle {
+  width: 60vw;
+  font-size: 6.4vw;
+  font-family: var(--tfont);
+}
+.galleryBox,
+.ProjectBox {
+  display: flex;
+  box-shadow: var(--halation);
+  flex-direction: column;
+  border: var(--whiteborder);
+  margin: 0.8vw;
+  max-width: calc((100% - 6vw) / 3);
+  box-sizing: content-box;
+}
+.thumbnail {
+  width: 100%;
+  aspect-ratio: auto;
+  border-bottom: var(--whiteborder);
+}
+.galleryText,
+.ProjectText {
+  padding: 0.7vw;
+  font-size: 1.7vw;
+  font-family: var(--bfont);
+  font-weight: 600;
+}
+.ProjectText {
+  padding-bottom: 0;
+}
+.space {
+  height: 6.5vw;
+}
+.CategoryContainer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0.3vw;
+  padding-bottom: 1vw;
+}
+.Category {
+  display: flex;
+  font-size: 1.1vw;
+  padding: 0.2vw;
+  margin: 0.2vw;
+  color: var(--icon);
+}
+.ProjectPage {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+.ProjectPageTitleContainer {
+  position: fixed;
+  flex-direction: column;
+  padding: 5vw;
+  width: 39vw;
+  box-sizing: border-box;
+  display: flex;
+  left: 0;
+}
+.ProjectPageTitle {
+  font-family: var(--tfont);
+  font-size: 4vw;
+}
+.ProjectPageText {
+  width: 80%;
+  padding: 0.3vw;
+  font-size: 1.35vw;
+}
+.Scrolling {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 60vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.ProjDownload {
+  border: var(--whiteborder);
+  box-shadow: var(--halation);
+  display: flex;
+  font-size: 1.4vw;
+  max-width: fit-content;
+  padding: 0.3vw;
+  margin-top: 1vw;
+}
+.ZinePage,
+.PresentationPage {
+  box-shadow: var(--halation);
+  margin: 1vw;
+  margin-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: end;
+  border: var(--whiteborder);
+}
+.ZinePage {
+  width: calc((100% / 2) - 1.5vw);
+}
+.PresentationPage {
+  width: calc(100% - 1.5vw);
+}
+.VDKSelect {
+  font-size: 6vw;
+  font-family: var(--tfont);
+}
+.VDKSelectContain {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 10.5vw;
+  }
+  .textnphoto {
+    width: 90vw;
+  }
+  .para {
+    font-size: 2.5vw;
+    width: 55vw;
+  }
+  .me {
+    width: 30vw;
+    height: 30vw;
+  }
+  .icon {
+    height: 4vw;
+    padding: 1vw;
+  }
+  .Gallery,
+  .Projects {
+    padding-left: 1.7vw;
+    padding-right: 1.7vw;
+  }
+  .GalleryTitle,
+  .ProjectTitle {
+    width: 90vw;
+    font-size: 10vw;
+  }
+  .ProjectBox {
+    max-width: calc((100% - 9vw) / 2);
+    margin: 2vw;
+  }
+  .galleryBox {
+    max-width: calc((100% - 9vw) / 3);
+    margin: 1vw;
+  }
+  .galleryText {
+    font-size: 3vw;
+    padding: 1.3vw;
+  }
+  .ProjectText {
+    font-size: 4.3vw;
+    padding: 1.3vw;
+    padding-bottom: 0;
+  }
+  .CategoryContainer {
+    padding-left: 1vw;
+  }
+  .Category {
+    font-size: 2.2vw;
+  }
+  .ProjectPage {
+    display: flex;
+    width: 88vw;
+    height: auto;
+    align-items: center;
+    overflow: auto;
+  }
+  .ProjectPageTitleContainer {
+    position: relative;
+    padding: 2vw;
+    width: 90vw;
+  }
+  .ProjectPageTitle {
+    width: fit-content;
+    font-size: 10vw;
+  }
+  .ProjectPageText {
+    font-size: 4vw;
+    width: 100%;
+  }
+  .Scrolling {
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .ZinePage {
+    width: calc((100% / 2) - 2.4vw);
+    margin: 1vw;
+  }
+  .PresentationPage {
+    margin: 1vw;
+  }
+  .VDKSelectContain {
+    flex-direction: column;
+  }
+  .VDKSelect {
+    font-size: 22vw;
+  }
+  .ProjDownload {
+    border: var(--whiteborder);
+    box-shadow: var(--halation);
+    display: flex;
+    font-size: 4vw;
+    max-width: fit-content;
+    margin-top: 2vw;
+    padding: 1.3vw;
+  }
+}
