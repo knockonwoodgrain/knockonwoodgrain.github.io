@@ -1,61 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @font-face {
   font-family: Gambarino;
-  src: url("Fonts/Gambarino-Regular.otf");
+  src: url("./Fonts/Gambarino-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Playfair Display Semibold Italic;
-  src: url("Fonts/PlayfairDisplay-SemiBoldItalic.ttf");
+  src: url("./Fonts/PlayfairDisplay-SemiBoldItalic.ttf");
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: Playfair Display Bold;
-  src: url("Fonts/PlayfairDisplay-Bold.ttf");
+  src: url("./Fonts/PlayfairDisplay-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica Bold;
-  src: url("Fonts/HelveticaNeueLTStd-Bd.otf");
+  src: url("./Fonts/HelveticaNeueLTStd-Bd.otf");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica Black;
-  src: url("Fonts/HelveticaNeueLTStd-Blk.otf");
+  src: url("./Fonts/HelveticaNeueLTStd-Blk.otf");
   font-weight: bolder;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica Extended;
-  src: url("Fonts/HelveticaNeueLTStd-BlkEx.otf");
+  src: url("./Fonts/HelveticaNeueLTStd-BlkEx.otf");
   font-weight: bolder;
   font-style: normal;
 }
 @font-face {
   font-family: Helvetica;
-  src: url("Fonts/HelveticaNeueLTStd-Roman.otf");
+  src: url("./Fonts/HelveticaNeueLTStd-Roman.otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Univers;
-  src: url("Fonts/UniversLTStd.otf");
+  src: url("./Fonts/UniversLTStd.otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Univers Bold;
-  src: url("Fonts/UniversLTStd-Bold.otf");
+  src: url("./Fonts/UniversLTStd-Bold.otf");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: Univers;
-  src: url("Fonts/UniversLTStd-Light.otf");
+  src: url("./Fonts/UniversLTStd-Light.otf");
   font-weight: lighter;
   font-style: normal;
 }
