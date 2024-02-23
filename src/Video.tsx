@@ -1,7 +1,10 @@
+import { useRef } from "react";
+
 function BGVideo() {
+  const isMuted = useRef(true);
   return (
-    <video autoPlay muted loop id="BgVideo">
-      <source src="BG.webm" type="video/mp4" />
+    <video autoPlay muted={isMuted.current} loop id="BgVideo">
+      <source src="BG.webm" type="video/webm" />
     </video>
   );
 }

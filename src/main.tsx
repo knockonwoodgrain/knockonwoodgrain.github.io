@@ -11,6 +11,11 @@ import Spectrum from "./Pages/Spectrum.tsx";
 import Untitled from "./Pages/Untitled.tsx";
 import Postember from "./Pages/Postember.tsx";
 import UX from "./Pages/UX.tsx";
+import IGOR from "./Pages/IGOR.tsx";
+import CampFlogGnaw from "./Pages/CFG.tsx";
+import PhotosSelect from "./Pages/Photography/Photography Select.tsx";
+import Pongal from "./Pages/Photography/Pongal.tsx";
+import Optikal from "./Pages/Photography/Optikal.tsx";
 
 const router = createHashRouter([
   {
@@ -48,6 +53,26 @@ const router = createHashRouter([
   {
     path: "/UX Portfolio",
     element: <UX />,
+  },
+  {
+    path: "/IGOR",
+    element: <IGOR />,
+  },
+  {
+    path: "/CFG Branding",
+    element: <CampFlogGnaw />,
+  },
+  {
+    path: "/Photography",
+    element: <PhotosSelect />,
+  },
+  {
+    path: "/Photography/Pongal",
+    element: <Pongal />,
+  },
+  {
+    path: "/Photography/Optikal Asylum",
+    element: <Optikal />,
   },
 ]);
 

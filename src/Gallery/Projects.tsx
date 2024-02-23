@@ -17,15 +17,26 @@ const projects = [
     categories: ["Zine", "Experimental", "Writing"],
   },
   {
-    title: "Untitled",
-    image: "Thumbnail/Untitled.webp",
-    categories: ["Posters", "Experimental", "Writing"],
+    title: "IGOR",
+    image: "Thumbnail/IGOR.jpg",
+    categories: ["Zine", "Tribute"],
+  },
+  {
+    title: "CFG Branding",
+    image: "Thumbnail/CFG.jpg",
+    categories: ["Branding", "Illustration"],
   },
   {
     title: "Postember",
     image: "Thumbnail/Postember.jpg",
     categories: ["Posters"],
   },
+  {
+    title: "Untitled",
+    image: "Thumbnail/Untitled.webp",
+    categories: ["Posters", "Experimental", "Writing"],
+  },
+
   {
     title: "UX Portfolio",
     image: "Thumbnail/Website.jpg",

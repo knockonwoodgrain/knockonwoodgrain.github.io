@@ -77,6 +77,7 @@
   --bfont: "IBM Plex Sans", sans-serif;
   --tfont: "Gambarino";
   --halation: 0 0px 7px rgb(255, 0, 0);
+  --halationm: 0 0px 3px rgb(255, 0, 0);
   --whiteborder: 0.2vw solid white;
   --icon: rgba(200, 200, 200, 1);
   --category: rgba(60, 60, 60, 1);
@@ -169,7 +170,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left: 18.5vw;
   padding-right: 18.5vw;
   padding-top: 1vw;
@@ -251,9 +252,9 @@ a {
   flex-direction: row;
   align-items: flex-end;
   width: 60vw;
-  height: 100vh;
   flex-wrap: wrap;
   box-sizing: border-box;
+  margin-bottom: 1vw;
 }
 .ProjDownload {
   border: var(--whiteborder);
@@ -293,6 +294,9 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    text-shadow: var(--halationm);
+  }
   .title {
     font-size: 10.5vw;
   }
@@ -306,10 +310,12 @@ a {
   .me {
     width: 30vw;
     height: 30vw;
+    box-shadow: var(--halationm);
   }
   .icon {
     height: 4vw;
     padding: 1vw;
+    box-shadow: var(--halationm);
   }
   .Gallery,
   .Projects {
@@ -324,10 +330,12 @@ a {
   .ProjectBox {
     max-width: calc((100% - 9vw) / 2);
     margin: 2vw;
+    box-shadow: var(--halationm);
   }
   .galleryBox {
     max-width: calc((100% - 9vw) / 3);
     margin: 1vw;
+    box-shadow: var(--halationm);
   }
   .galleryText {
     font-size: 3vw;
@@ -373,11 +381,13 @@ a {
     justify-content: center;
   }
   .ZinePage {
-    width: calc((100% / 2) - 2.4vw);
+    width: calc((100% / 2) - 2.67vw);
     margin: 1vw;
+    box-shadow: var(--halationm);
   }
   .PresentationPage {
     margin: 1vw;
+    box-shadow: var(--halationm);
   }
   .VDKSelectContain {
     flex-direction: column;
@@ -386,11 +396,8 @@ a {
     font-size: 22vw;
   }
   .ProjDownload {
-    border: var(--whiteborder);
-    box-shadow: var(--halation);
-    display: flex;
+    box-shadow: var(--halationm);
     font-size: 4vw;
-    max-width: fit-content;
     margin-top: 2vw;
     padding: 1.3vw;
   }
