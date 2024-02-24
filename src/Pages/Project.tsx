@@ -1,5 +1,7 @@
 import { FunctionComponent } from "react";
 import BGVideo from "../Video";
+import SocialIcons from "../Social";
+import BackButton from "./BackButton";
 
 function Project(projinfo: {
   title: string;
@@ -13,10 +15,14 @@ function Project(projinfo: {
     <>
       <BGVideo />
       <div className="ProjectPageTitleContainer">
-        <div className="ProjectPageTitle">{projinfo.title}</div>
-        <div className="ProjectPageText">{projinfo.text}</div>
-        <div className="ProjDownload">
-          <a href={projinfo.download}>Download</a>
+        <BackButton />
+        <div className="ProjectTitleTextDownload">
+          <div className="ProjectPageTitle">{projinfo.title}</div>
+          <div className="ProjectPageText">{projinfo.text}</div>
+          <div className="ProjDownload">
+            <a href={projinfo.download}>Download</a>
+          </div>
+          <SocialIcons />
         </div>
       </div>
       <div className="ProjectPage">
