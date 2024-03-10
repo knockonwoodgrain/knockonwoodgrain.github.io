@@ -1,10 +1,10 @@
 import Project from "./Project";
-import ZineProjectContents from "./Zine Layout";
+
 const IGORPages = {
   title: "IGOR",
   text: "A text chain I sent to my best friend when I dealt with heartbreak This album helped me articulate it better than I ever couldThank You Tyler, The Creator",
   download: "IGOR/IGOR.pdf",
-  layout: ZineProjectContents,
+  layout: "ZineScrolling",
   Content: [
     "IGOR/1.jpg",
     "IGOR/16.jpg",

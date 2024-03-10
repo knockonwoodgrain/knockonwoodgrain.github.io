@@ -1,10 +1,9 @@
-import PresentationProjectContents from "./Presentation Layout";
 import Project from "./Project";
 const UntitledPages = {
   title: "Untitled",
   text: "Discovering creativity and artistic prowess in myself at 2 AM, this is where I was reborn ",
   download: "Untitled/Untitled.zip",
-  layout: PresentationProjectContents,
+  layout: "PresentationScrolling",
   Content: [
     "Untitled/Untitled.webp",
     "Untitled/Untitled3Web.webp",

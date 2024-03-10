@@ -21,7 +21,7 @@ function Gallery() {
   return (
     <>
       <div className="GalleryTitle">Gallery</div>
-      <div className="Projects">
+      <div className="Gallery">
         {projects.map((project) => (
           <GalleryBox
             key={project.title} // Adding a unique key using the index

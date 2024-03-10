@@ -1,11 +1,10 @@
 import Project from "./Project";
-import PresentationProjectContents from "./Presentation Layout";
 
 const UXPages = {
   title: "Portfolio Design",
   text: "Designing a Portfolio, based on the UX Design Process by Jesse James Garett",
   download: "UX/Portfolio.pdf",
-  layout: PresentationProjectContents,
+  layout: "PresentationScrolling",
   Content: [
     "UX/1.jpg",
     "UX/2.jpg",

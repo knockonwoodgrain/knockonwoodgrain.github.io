@@ -1,15 +1,27 @@
 import ProjectBox from "./ProjectBox";
 
-const projects = [
-  {
-    title: "VDK HBPT RUX",
-    image: "Thumbnail/VDK.webp",
-    categories: ["Zine", "Experimental", "Writing"],
-  },
+const designs = [
   {
     title: "Mindset",
     image: "Thumbnail/SDP.jpg",
     categories: ["Zine", "Design Project"],
+  },
+  {
+    title: "CFG Branding",
+    image: "Thumbnail/CFG.jpg",
+    categories: ["Branding", "Illustration"],
+  },
+  {
+    title: "UX Portfolio",
+    image: "Thumbnail/Website.jpg",
+    categories: ["UX", "Website"],
+  },
+];
+const arts = [
+  {
+    title: "VDK HBPT RUX",
+    image: "Thumbnail/VDK.webp",
+    categories: ["Zine", "Experimental", "Writing"],
   },
   {
     title: "Spectrum",
@@ -22,11 +34,6 @@ const projects = [
     categories: ["Zine", "Tribute"],
   },
   {
-    title: "CFG Branding",
-    image: "Thumbnail/CFG.jpg",
-    categories: ["Branding", "Illustration"],
-  },
-  {
     title: "Postember",
     image: "Thumbnail/Postember.jpg",
     categories: ["Posters"],
@@ -36,22 +43,25 @@ const projects = [
     image: "Thumbnail/Untitled.webp",
     categories: ["Posters", "Experimental", "Writing"],
   },
-
-  {
-    title: "UX Portfolio",
-    image: "Thumbnail/Website.jpg",
-    categories: ["UX", "Website"],
-  },
 ];
 function Projects() {
   return (
     <>
-      <div className="ProjectTitle">Projects</div>
+      <div className="ProjectTitle">Design</div>
       <div className="Projects">
-        {projects.map((project) => (
+        {designs.map((design) => (
           <ProjectBox
-            key={project.title} // Adding a unique key using the index
-            {...project}
+            key={design.title} // Adding a unique key using the index
+            {...design}
+          />
+        ))}
+      </div>
+      <div className="ProjectTitle">Art</div>
+      <div className="Projects">
+        {arts.map((art) => (
+          <ProjectBox
+            key={art.title} // Adding a unique key using the index
+            {...art}
           />
         ))}
       </div>

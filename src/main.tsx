@@ -16,6 +16,11 @@ import CampFlogGnaw from "./Pages/CFG.tsx";
 import PhotosSelect from "./Pages/Photography/Photography Select.tsx";
 import Pongal from "./Pages/Photography/Pongal.tsx";
 import Optikal from "./Pages/Photography/Optikal.tsx";
+import PhotowalkJ from "./Pages/Photography/Photowalk J.tsx";
+import SufiNite from "./Pages/Photography/SufiNite.tsx";
+import DarktableFun from "./Pages/Photography/DarktableFun.tsx";
+import SkateBoy from "./Pages/Photography/SkateBoy.tsx";
+import ThreeDSelect from "./Pages/3D/3D Select.tsx";
 
 const router = createHashRouter([
   {
@@ -73,6 +78,26 @@ const router = createHashRouter([
   {
     path: "/Photography/Optikal Asylum",
     element: <Optikal />,
+  },
+  {
+    path: "/Photography/Photowalk J",
+    element: <PhotowalkJ />,
+  },
+  {
+    path: "/Photography/SufiNite",
+    element: <SufiNite />,
+  },
+  {
+    path: "/Photography/Darktable Fun",
+    element: <DarktableFun />,
+  },
+  {
+    path: "/Photography/SkateBoy",
+    element: <SkateBoy />,
+  },
+  {
+    path: "/3D",
+    element: <ThreeDSelect />,
   },
 ]);
 

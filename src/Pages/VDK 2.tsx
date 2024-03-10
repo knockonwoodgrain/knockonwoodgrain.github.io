@@ -1,10 +1,10 @@
 import Project from "./Project";
-import ZineProjectContents from "./Zine Layout";
+
 const VdkPages = {
   title: "VDK HBPT RUX 2",
-  text: "VDK HBPT RUX, an archive, a memory, a love letter, a person, a timeline, a tribute, a mistake, a document, a zine, a visual showcase. This is everything I love, and everything I did, when I made it.",
+  text: "VDK HBPT RUX, an archive, a memory, a love letter, a person, a timeline, a tribute, a miSkate, a document, a zine, a visual showcase. This is everything I love, and everything I did, when I made it.",
   download: "Archive/VDK2.pdf",
-  layout: ZineProjectContents,
+  layout: "ZineScrolling",
   Content: [
     "Archive/2_1.webp",
     "Archive/2_28.webp",

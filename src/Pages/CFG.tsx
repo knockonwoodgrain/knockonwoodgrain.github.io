@@ -1,11 +1,10 @@
 import Project from "./Project";
-import ZineProjectContents from "./Zine Layout";
 
 const CFGs = {
   title: "Camp Flog Gnaw Branding",
   text: "A hypothetical illustration and poster branding for The Camp Flog Gnaw Carnival.",
   download: "CFG.pdf",
-  layout: ZineProjectContents,
+  layout: "ZineScrolling",
   Content: [
     "CFG/5.webp",
     "CFG/6.webp",

@@ -1,10 +1,10 @@
 import Project from "../Project";
-import ZineProjectContents from "../Zine Layout";
+
 const PongalPages = {
   title: "Pongal 24",
   text: "For Pongal 2024 at MITID",
   download: "Photos/Pongal/Pongal.zip",
-  layout: ZineProjectContents,
+  layout: "ZineScrolling",
   Content: [
     "Photos/Pongal/2I1.jpg",
     "Photos/Pongal/2I2.jpg",

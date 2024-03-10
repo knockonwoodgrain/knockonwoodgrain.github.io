@@ -1,10 +1,10 @@
 import Project from "./Project";
-import ZineProjectContents from "./Zine Layout";
+
 const PostemberPage = {
   title: "Postember",
   text: "One poster each day, for the month of october. This is how I got better",
   download: "Design Syndrome/Design Syndrome.zip",
-  layout: ZineProjectContents,
+  layout: "ZineScrolling",
   Content: [
     "Design Syndrome/2.webp",
     "Design Syndrome/3.webp",
