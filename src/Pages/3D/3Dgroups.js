@@ -1,0 +1,92 @@
+const ThreeDgroups = [
+  {
+    "title": "All In One",
+    "content": "3D/All In One.mp4",
+    "categories": [
+      "Animation"
+    ],
+    "video": true
+  },
+  {
+    "title": "Coffee",
+    "content": "3D/Coffee.mp4",
+    "categories": [
+      "Uncategorized"
+    ],
+    "video": true
+  },
+  {
+    "title": "Dark Side",
+    "content": "3D/Dark Side.webp",
+    "categories": [
+      "Uncategorized"
+    ],
+    "video": false
+  },
+  {
+    "title": "KID A",
+    "content": "3D/KID A.webp",
+    "categories": [
+      "Uncategorized"
+    ],
+    "video": false
+  },
+  {
+    "title": "Mine",
+    "content": "3D/Mine.jpg",
+    "categories": [
+      "Uncategorized"
+    ],
+    "video": false
+  },
+  {
+    "title": "NakedBodies",
+    "content": "3D/NakedBodies.jpg",
+    "categories": [
+      "Uncategorized"
+    ],
+    "video": false
+  },
+  {
+    "title": "NY Quickstep",
+    "content": "3D/NY Quickstep.jpg",
+    "categories": [
+      "Uncategorized"
+    ],
+    "video": false
+  },
+  {
+    "title": "Phone",
+    "content": "3D/Phone.mp4",
+    "categories": [
+      "Uncategorized"
+    ],
+    "video": true
+  },
+  {
+    "title": "Spinning Donut",
+    "content": "3D/Spinning Donut.webm",
+    "categories": [
+      "Uncategorized"
+    ],
+    "video": true
+  },
+  {
+    "title": "Stairs",
+    "content": "3D/Stairs.webm",
+    "categories": [
+      "Uncategorized"
+    ],
+    "video": true
+  },
+  {
+    "title": "Untitled Unmastered",
+    "content": "3D/Untitled Unmastered.jpg",
+    "categories": [
+      "Uncategorized"
+    ],
+    "video": false
+  }
+];
+
+export default ThreeDgroups;

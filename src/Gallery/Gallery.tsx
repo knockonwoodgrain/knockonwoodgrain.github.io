@@ -3,17 +3,19 @@ import GalleryBox from "./GalleryBox";
 const projects = [
   {
     title: "Photography",
-    image: "Thumbnail/Photos.jpg",
+    content: "Thumbnail/Good Thumbnail.webm",
     category: [],
+    video: true,
   },
   {
     title: "3D",
-    image: "Thumbnail/ThreeD.jpg",
+    content: "3D/Spinning Donut.webm",
     category: [],
+    video: true,
   },
   {
-    title: "Archive",
-    image: "Thumbnail/Archive.webp",
+    title: "Cinematography",
+    content: "Thumbnail/Archive.webp",
     category: [],
   },
 ];

@@ -1,105 +1,79 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import VDKSelect from "./Pages/VDK Selection.tsx";
+import PhotosSelect from "./Pages/Photography.tsx"
+import ProjectPage from "./Pages/ProjectPage.tsx"
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import VDKOne from "./Pages/VDK 1.tsx";
-import VDKTwo from "./Pages/VDK 2.tsx";
-import Mindset from "./Pages/Mindset.tsx";
-import Spectrum from "./Pages/Spectrum.tsx";
-import Untitled from "./Pages/Untitled.tsx";
-import Postember from "./Pages/Postember.tsx";
-import UX from "./Pages/UX.tsx";
-import IGOR from "./Pages/IGOR.tsx";
-import CampFlogGnaw from "./Pages/CFG.tsx";
-import PhotosSelect from "./Pages/Photography/Photography Select.tsx";
-import Pongal from "./Pages/Photography/Pongal.tsx";
-import Optikal from "./Pages/Photography/Optikal.tsx";
-import PhotowalkJ from "./Pages/Photography/Photowalk J.tsx";
-import SufiNite from "./Pages/Photography/SufiNite.tsx";
-import DarktableFun from "./Pages/Photography/DarktableFun.tsx";
-import SkateBoy from "./Pages/Photography/SkateBoy.tsx";
-import ThreeDSelect from "./Pages/3D/3D Select.tsx";
 
-const router = createHashRouter([
+// Dynamically import all .tsx files in the current directory and in ./Pages
+const modules = {
+  ...import.meta.glob("./*.tsx"),           // Scan current directory
+  ...import.meta.glob("./Pages/**/*.tsx"),  // Scan Pages directory and subfolders
+};
+
+// Debugging: Log generated modules for paths and elements
+console.log("Available modules:", modules);
+
+// Process imported modules into routes
+const dynamicRoutes = Object.entries(modules).map(([path, module]) => {
+  // Derive the route path from the file path
+  let routePath = path
+    .replace("./", "/")            // Ensure files in root (./) are mapped to /
+    .replace(".tsx", "")           // Remove file extension
+    .replace(/\/Pages/g, "");      // Remove the /Pages prefix
+
+  // Debugging: Log both the original path and the final route
+  console.log(`Original path: ${path} -> Final route: ${routePath}`);
+
+  // Dynamically load the component using React.lazy
+  const Component = React.lazy(module);
+
+  return {
+    path: routePath,
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Component />
+      </Suspense>
+    ),
+  };
+});
+
+// Static routes (if needed)
+const staticRoutes = [
   {
     path: "/",
     element: <App />,
   },
+  // Fallback route for unmatched paths
   {
-    path: "/VDK HBPT RUX",
-    element: <VDKSelect />,
+    path: "*",
+    element: <div>404: Page Not Found</div>,
+  },
+];
+
+// Add dynamic routes for photography projects
+const photographyRoutes = [
+  {
+    path: "/photography",
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <PhotosSelect />
+      </Suspense>
+    ),
   },
   {
-    path: "/VDK HBPT RUX/VDK HBPT RUX 1",
-    element: <VDKOne />,
+    path: "/photography/:projectName",
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <ProjectPage />
+      </Suspense>
+    ),
   },
-  {
-    path: "/VDK HBPT RUX/VDK HBPT RUX 2",
-    element: <VDKTwo />,
-  },
-  {
-    path: "/Mindset",
-    element: <Mindset />,
-  },
-  {
-    path: "/Spectrum",
-    element: <Spectrum />,
-  },
-  {
-    path: "/Untitled",
-    element: <Untitled />,
-  },
-  {
-    path: "/Postember",
-    element: <Postember />,
-  },
-  {
-    path: "/UX Portfolio",
-    element: <UX />,
-  },
-  {
-    path: "/IGOR",
-    element: <IGOR />,
-  },
-  {
-    path: "/CFG Branding",
-    element: <CampFlogGnaw />,
-  },
-  {
-    path: "/Photography",
-    element: <PhotosSelect />,
-  },
-  {
-    path: "/Photography/Pongal",
-    element: <Pongal />,
-  },
-  {
-    path: "/Photography/Optikal Asylum",
-    element: <Optikal />,
-  },
-  {
-    path: "/Photography/Photowalk J",
-    element: <PhotowalkJ />,
-  },
-  {
-    path: "/Photography/SufiNite",
-    element: <SufiNite />,
-  },
-  {
-    path: "/Photography/Darktable Fun",
-    element: <DarktableFun />,
-  },
-  {
-    path: "/Photography/SkateBoy",
-    element: <SkateBoy />,
-  },
-  {
-    path: "/3D",
-    element: <ThreeDSelect />,
-  },
-]);
+];
+
+// Combine static, dynamic, and photography routes
+const router = createHashRouter([...staticRoutes, ...dynamicRoutes, ...photographyRoutes]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

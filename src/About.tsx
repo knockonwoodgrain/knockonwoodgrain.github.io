@@ -1,7 +1,7 @@
 import SocialIcons from "./Social";
 
 let para =
-  "I'm Parth Joshi a creator. This is my portfolio, to display my indulgence and creation of audiovisual artistry. Reflection of knowledge and experience through the lens of creativity.Life is perspective. My perspective may differ from yours. Endless memories painted through my rearview mirror. Looping Perspectives.";
+  "I'm Parth Joshi, a creator. This is my portfolio, showcasing my indulgence and creation of audiovisual artistry—a reflection of knowledge and experience through the lens of creativity. Life is a perspective, and mine may differ from yours. Endless memories are painted through my rearview mirror, creating a looping narrative of perspectives.";
 
 function About() {
   return (
