@@ -1,4 +1,4 @@
-const ThreeDgroups = [
+[
   {
     "title": "All In One",
     "content": "3D/All In One.mp4",
@@ -87,6 +87,4 @@ const ThreeDgroups = [
     ],
     "video": false
   }
-];
-
-export default ThreeDgroups;
+]

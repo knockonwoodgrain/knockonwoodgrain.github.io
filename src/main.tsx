@@ -27,7 +27,7 @@ const dynamicRoutes = Object.entries(modules).map(([path, module]) => {
   console.log(`Original path: ${path} -> Final route: ${routePath}`);
 
   // Dynamically load the component using React.lazy
-  const Component = React.lazy(module);
+  const Component = React.lazy(() => module().then(mod => ({ default: mod as React.ComponentType<any> })));
 
   return {
     path: routePath,

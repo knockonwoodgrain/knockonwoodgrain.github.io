@@ -16,7 +16,7 @@ function ProjectPage() {
 
   const images = Object.entries(imageModules)
     .filter(([path]) => path.includes(`/${projectName}/`))
-    .map(([path, module]) => {
+    .map(([path]) => {
       // Replace the public path prefix with the correct URL
       return path.replace('../../public/', '');
     });

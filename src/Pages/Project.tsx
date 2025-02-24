@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 function Project(projinfo: {
   title: string;
-  text: string;
+  text?: string;
   download?: string;
   layout: string;
   Content: Array<string>;
