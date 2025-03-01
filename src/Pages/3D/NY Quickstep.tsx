@@ -1,19 +1,18 @@
+        import Project from "../Project";
 
-import Project from "../Project";
-
-const Pages = {
-  title: "NY Quickstep",
-  text: "Description for NY Quickstep",
-  layout: "PresentationScrolling",
-  Content: [
+        const Pages = {
+          title: "NY Quickstep",
+          text: "A very original perfume concept, not inspired by French Waltz",
+          layout: "ZineScrolling",
+          Content: [
   "3D/NY Quickstep/NYQuickstepNewEdited.webp"
 ],
-  category: "Uncategorized",
-  video: false,
-};
+          category: "Product",
+          video: false,
+        };
 
-function NYQuickstep() {
-  return <Project {...Pages} />;
-}
+        function NYQuickstep() {
+          return <Project {...Pages} />;
+        }
 
-export default NYQuickstep;
+        export default NYQuickstep;

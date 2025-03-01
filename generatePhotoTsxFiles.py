@@ -97,11 +97,11 @@ def generate_photogroups(descriptions):
                 })
 
     # Write the photogroups.js file
-    photogroups_path = os.path.join(output_dir, 'photogroups.js')
-    photogroups_content = f"const photogroups = {json.dumps(photogroups, indent=2)};\n\nexport default photogroups;"
+    photogroups_path = os.path.join(output_dir, 'photogroups.json')
+    photogroups_content = f"{json.dumps(photogroups, indent=2)}"
     with open(photogroups_path, 'w', encoding='utf-8') as f:
         f.write(photogroups_content)
-    print(f"Generated photogroups.js at: {photogroups_path}")
+    print(f"Generated photogroups.json at: {photogroups_path}")
 
 # Main process
 if __name__ == "__main__":

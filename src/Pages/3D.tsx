@@ -1,13 +1,13 @@
 import ProjectBox from "../Gallery/ProjectBox";
 import BGVideo from "../Video";
-import ThreeDgroups from "./3D/ThreeDgroups.json"
+import ThreeDGroups from "./3D/ThreeDGroups.json"
 
 function ThreeDSelect() {
   return (
     <>
       <div className="ProjectTitle">3D</div>
       <div className="Projects">
-        {ThreeDgroups.map((project) => (
+        {ThreeDGroups.map((project) => (
           <ProjectBox
             key={project.title} // Adding a unique key using the index
             {...project}

@@ -76,7 +76,7 @@
   border-radius: var(--whiteradius);
 }
 :root {
-  --bfont: "IBM Plex Sans", sans-serif;
+  --bfont: "Helvetica", sans-serif;
   --tfont: "Gambarino";
   --halation: 0 0px 2px rgb(255, 0, 0);
   --halationm: 0 0px 2px rgb(255, 0, 0);
@@ -358,6 +358,9 @@ a {
   .dwicon {
     height: 6vw;
     padding: 0vw;
+  }
+  #BgVideo{
+    transform: rotate(90deg);
   }
   .Gallery,
   .Projects {

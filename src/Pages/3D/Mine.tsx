@@ -1,19 +1,18 @@
+        import Project from "../Project";
 
-import Project from "../Project";
-
-const Pages = {
-  title: "Mine",
-  text: "Description for Mine",
-  layout: "PresentationScrolling",
-  Content: [
+        const Pages = {
+          title: "Mine",
+          text: "How come the ecstasy always depresses me so?,\nChemically, I don't have no more new places to go",
+          layout: "ZineScrolling",
+          Content: [
   "3D/Mine/Mine.webp"
 ],
-  category: "Uncategorized",
-  video: false,
-};
+          category: "Frank Ocean",
+          video: false,
+        };
 
-function Mine() {
-  return <Project {...Pages} />;
-}
+        function Mine() {
+          return <Project {...Pages} />;
+        }
 
-export default Mine;
+        export default Mine;

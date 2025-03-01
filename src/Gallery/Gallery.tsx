@@ -12,12 +12,12 @@ const projects = [
     content: "3D/Spinning Donut.webm",
     category: [],
     video: true,
-  },
-  {
-    title: "Cinematography",
-    content: "Thumbnail/Archive.webp",
-    category: [],
-  },
+  }
+  //{
+  //  title: "Cinematography",
+  //  content: "Thumbnail/Archive.webp",
+  //  category: [],
+  //},
 ];
 function Gallery() {
   return (

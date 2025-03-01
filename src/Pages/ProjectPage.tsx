@@ -10,16 +10,18 @@ function ProjectPage() {
   if (!project) return <div>Project not found.</div>;
 
   // Dynamically import images from the public directory
-
-  const imageModules = import.meta.glob('../../public/Photos/**/*.{JPG,jpg,jpeg,png,gif,webp,avif}', { eager: true });
-    // Filter images for the current project
-
-  const images = Object.entries(imageModules)
-    .filter(([path]) => path.includes(`/${projectName}/`))
-    .map(([path]) => {
-      // Replace the public path prefix with the correct URL
-      return path.replace('../../public/', '');
-    });
+  //
+  //const imageModules = import.meta.glob('../../public/Photos/**/*.{JPG,jpg,jpeg,png,gif,webp,avif}', { eager: true });
+  //  // Filter images for the current project
+  //
+  //const images = Object.entries(imageModules)
+  //  .filter(([path]) => path.includes(`/${projectName}/`))
+  //  .map(([path, module]) => {
+  //    // Replace the public path prefix with the correct URL
+  //    return path.replace('../../public/', '');
+  //  });
+  //
+const images = project.images.map(img => `/Photos/${projectName}/${img}`);
 
   console.log(images)
   console.log(imageModules)

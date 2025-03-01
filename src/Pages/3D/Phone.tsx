@@ -1,19 +1,18 @@
+        import Project from "../Project";
 
-import Project from "../Project";
-
-const Pages = {
-  title: "Phone",
-  text: "Description for Phone",
-  layout: "PresentationScrolling",
-  Content: [
+        const Pages = {
+          title: "Phone",
+          text: "I had a broken phone, so I thought atleast I can day dream",
+          layout: "ZineScrolling",
+          Content: [
   "3D/Phone/Phone1.mp4"
 ],
-  category: "Uncategorized",
-  video: true,
-};
+          category: "Product",
+          video: true,
+        };
 
-function Phone() {
-  return <Project {...Pages} />;
-}
+        function Phone() {
+          return <Project {...Pages} />;
+        }
 
-export default Phone;
+        export default Phone;

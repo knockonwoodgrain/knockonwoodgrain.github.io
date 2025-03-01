@@ -1,19 +1,18 @@
+        import Project from "../Project";
 
-import Project from "../Project";
-
-const Pages = {
-  title: "Spinning Donut",
-  text: "Description for Spinning Donut",
-  layout: "PresentationScrolling",
-  Content: [
+        const Pages = {
+          title: "Spinning Donut",
+          text: "I was just trying to learn geometry nodes",
+          layout: "ZineScrolling",
+          Content: [
   "3D/Spinning Donut/Trip.webm"
 ],
-  category: "Uncategorized",
-  video: true,
-};
+          category: "Geo Nodes",
+          video: true,
+        };
 
-function SpinningDonut() {
-  return <Project {...Pages} />;
-}
+        function SpinningDonut() {
+          return <Project {...Pages} />;
+        }
 
-export default SpinningDonut;
+        export default SpinningDonut;

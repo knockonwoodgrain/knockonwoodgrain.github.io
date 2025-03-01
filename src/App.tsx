@@ -8,8 +8,8 @@ function App() {
     <>
       <About />
       <div className="space" />
-      <Gallery />
       <Projects />
+      <Gallery />
       <div className="space" />
       <BGVideo />
     </>

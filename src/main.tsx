@@ -27,7 +27,14 @@ const dynamicRoutes = Object.entries(modules).map(([path, module]) => {
   console.log(`Original path: ${path} -> Final route: ${routePath}`);
 
   // Dynamically load the component using React.lazy
-  const Component = React.lazy(() => module().then(mod => ({ default: mod as React.ComponentType<any> })));
+  //const Component = React.lazy(() => module().then(mod => ({ default: mod as React.ComponentType<any> })));
+  const Component = React.lazy(async () => {
+  const mod = await module();
+  if (!mod || !mod.default) {
+    throw new Error(`Module ${path} does not have a default export.`);
+  }
+  return { default: mod.default as React.ComponentType<any> };
+});
 
   return {
     path: routePath,
@@ -55,7 +62,7 @@ const staticRoutes = [
 // Add dynamic routes for photography projects
 const photographyRoutes = [
   {
-    path: "/photography",
+    path: "/Photography",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <PhotosSelect />
@@ -63,7 +70,7 @@ const photographyRoutes = [
     ),
   },
   {
-    path: "/photography/:projectName",
+    path: "/Photography/:projectName",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <ProjectPage />

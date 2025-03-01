@@ -1,19 +1,18 @@
+        import Project from "../Project";
 
-import Project from "../Project";
-
-const Pages = {
-  title: "Coffee",
-  text: "Description for Coffee",
-  layout: "PresentationScrolling",
-  Content: [
+        const Pages = {
+          title: "Coffee",
+          text: "Coffee to keep your lips warm, prototype for a cup that tells you the temperature",
+          layout: "ZineScrolling",
+          Content: [
   "3D/Coffee/CofeeEdited.mp4"
 ],
-  category: "Uncategorized",
-  video: true,
-};
+          category: "Product",
+          video: true,
+        };
 
-function Coffee() {
-  return <Project {...Pages} />;
-}
+        function Coffee() {
+          return <Project {...Pages} />;
+        }
 
-export default Coffee;
+        export default Coffee;
