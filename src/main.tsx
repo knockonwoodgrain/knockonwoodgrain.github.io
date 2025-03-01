@@ -1,8 +1,6 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import PhotosSelect from "./Pages/Photography.tsx"
-import ProjectPage from "./Pages/ProjectPage.tsx"
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
@@ -29,7 +27,7 @@ const dynamicRoutes = Object.entries(modules).map(([path, module]) => {
   // Dynamically load the component using React.lazy
   //const Component = React.lazy(() => module().then(mod => ({ default: mod as React.ComponentType<any> })));
   const Component = React.lazy(async () => {
-  const mod = await module();
+  const mod = await module() as { default: React.ComponentType<any> };
   if (!mod || !mod.default) {
     throw new Error(`Module ${path} does not have a default export.`);
   }
@@ -60,27 +58,27 @@ const staticRoutes = [
 ];
 
 // Add dynamic routes for photography projects
-const photographyRoutes = [
-  {
-    path: "/Photography",
-    element: (
-      <Suspense fallback={<div>Loading...</div>}>
-        <PhotosSelect />
-      </Suspense>
-    ),
-  },
-  {
-    path: "/Photography/:projectName",
-    element: (
-      <Suspense fallback={<div>Loading...</div>}>
-        <ProjectPage />
-      </Suspense>
-    ),
-  },
-];
+//const photographyRoutes = [
+//  {
+//    path: "/Photography",
+//    element: (
+//      <Suspense fallback={<div>Loading...</div>}>
+//        <PhotosSelect />
+//      </Suspense>
+//    ),
+//  },
+//  {
+//    path: "/Photography/:projectName",
+//    element: (
+//      <Suspense fallback={<div>Loading...</div>}>
+//        <ProjectPage />
+//      </Suspense>
+//    ),
+//  },
+//];
 
 // Combine static, dynamic, and photography routes
-const router = createHashRouter([...staticRoutes, ...dynamicRoutes, ...photographyRoutes]);
+const router = createHashRouter([...staticRoutes, ...dynamicRoutes]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

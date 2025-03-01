@@ -8,7 +8,7 @@ os.makedirs(output_dir, exist_ok=True)
 
 # Function to load descriptions and categories from description.js
 def load_descriptions():
-    description_file = os.path.join(public_dir, 'description.json')  # Use .json file
+    description_file = os.path.join(public_dir, 'metadata.json')  # Use .json file
     if not os.path.exists(description_file):
         print("description.json not found in Photos folder.")
         return {}
@@ -17,7 +17,7 @@ def load_descriptions():
         with open(description_file, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
-        print(f"Error reading description.json: {e}")
+        print(f"Error reading metadata.json: {e}")
         return {}
 
 # Function to get all image files from a folder

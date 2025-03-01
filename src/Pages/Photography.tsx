@@ -1,6 +1,6 @@
 import ProjectBox from "../Gallery/ProjectBox";
 import BGVideo from "../Video";
-import photogroups from './description.json';
+import photogroups from './Photography/photogroups.json';
 
 function PhotosSelect() {
   return (
