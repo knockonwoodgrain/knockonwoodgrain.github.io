@@ -81,7 +81,7 @@
   --halation: 0 0px 2px rgb(255, 0, 0);
   --halationm: 0 0px 2px rgb(255, 0, 0);
   --whiteborder: 0px solid rgb(255, 225, 255);
-  --whiteradius: 0.7vw;
+  --whiteradius: 1vw;
   --icon: rgba(200, 200, 200, 1);
   --category: rgba(60, 60, 60, 1);
 }
@@ -337,6 +337,9 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  :root{
+    --whiteradius: 2.6vw;
+  }
   .title {
     font-size: 10.5vw;
   }
@@ -361,13 +364,15 @@ a {
   }
   #BgVideo{
     transform: rotate(90deg);
+    right: auto;
+    max-width: 100vh;
   }
   .Gallery,
   .Projects {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 4.5vw;
     max-width: 90vw;
-    padding-left: 1.7vw;
+    padding-left: 1.7vw;  
     padding-right: 1.7vw;
   }
   .Gallery {
