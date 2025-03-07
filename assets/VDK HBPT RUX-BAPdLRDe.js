@@ -1,0 +1,1 @@
+import{j as e,B as a,L as n}from"./index-Cte6SJHx.js";const t=["1","2"];function i(){return e.jsxs(e.Fragment,{children:[e.jsx(a,{}),e.jsx("div",{className:"VDKSelectContain",children:t.map(s=>e.jsx(n,{to:"VDK HBPT RUX "+s,className:"Link",children:e.jsx("div",{className:"VDKSelect",children:"Issue "+s},s)},s))})]})}export{i as default};

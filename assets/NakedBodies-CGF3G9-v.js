@@ -1,0 +1,1 @@
+import{j as e}from"./index-Cte6SJHx.js";import t from"./Project-Dq6MHS5l.js";import"./BackButton-CDJJ_HwV.js";const o={title:"NakedBodies",text:"Tried making one human form, and then a lot of them repeated",layout:"ZineScrolling",Content:["3D/NakedBodies/WTFISTHIS3Edited.webp"],category:"NSFW",video:!1};function n(){return e.jsx(t,{...o})}export{n as default};

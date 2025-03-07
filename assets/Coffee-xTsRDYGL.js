@@ -1,0 +1,1 @@
+import{j as e}from"./index-Cte6SJHx.js";import t from"./Project-Dq6MHS5l.js";import"./BackButton-CDJJ_HwV.js";const o={title:"Coffee",text:"Coffee to keep your lips warm, prototype for a cup that tells you the temperature",layout:"ZineScrolling",Content:["3D/Coffee/CofeeEdited.mp4"],category:"Product",video:!0};function i(){return e.jsx(t,{...o})}export{i as default};

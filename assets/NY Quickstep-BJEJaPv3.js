@@ -1,0 +1,1 @@
+import{j as t}from"./index-Cte6SJHx.js";import e from"./Project-Dq6MHS5l.js";import"./BackButton-CDJJ_HwV.js";const o={title:"NY Quickstep",text:"A very original perfume concept, not inspired by French Waltz",layout:"ZineScrolling",Content:["3D/NY Quickstep/NYQuickstepNewEdited.webp"],category:"Product",video:!1};function c(){return t.jsx(e,{...o})}export{c as default};
