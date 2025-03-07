@@ -1,0 +1,123 @@
+[
+  {
+    "title": "All In One",
+    "content": "3D/All In One.mp4",
+    "layout": [
+      "ZineScrolling"
+    ],
+    "categories": [
+      "Animation"
+    ],
+    "video": true
+  },
+  {
+    "title": "Coffee",
+    "content": "3D/Coffee.mp4",
+    "layout": [
+      "ZineScrolling"
+    ],
+    "categories": [
+      "Product"
+    ],
+    "video": true
+  },
+  {
+    "title": "Dark Side",
+    "content": "3D/Dark Side.webp",
+    "layout": [
+      "ZineScrolling"
+    ],
+    "categories": [
+      "Experiment"
+    ],
+    "video": false
+  },
+  {
+    "title": "KID A",
+    "content": "3D/KID A.webp",
+    "layout": [
+      "ZineScrolling"
+    ],
+    "categories": [
+      "Experiment"
+    ],
+    "video": false
+  },
+  {
+    "title": "Mine",
+    "content": "3D/Mine.jpg",
+    "layout": [
+      "ZineScrolling"
+    ],
+    "categories": [
+      "Frank Ocean"
+    ],
+    "video": false
+  },
+  {
+    "title": "NakedBodies",
+    "content": "3D/NakedBodies.jpg",
+    "layout": [
+      "ZineScrolling"
+    ],
+    "categories": [
+      "NSFW"
+    ],
+    "video": false
+  },
+  {
+    "title": "NY Quickstep",
+    "content": "3D/NY Quickstep.jpg",
+    "layout": [
+      "ZineScrolling"
+    ],
+    "categories": [
+      "Product"
+    ],
+    "video": false
+  },
+  {
+    "title": "Phone",
+    "content": "3D/Phone.mp4",
+    "layout": [
+      "ZineScrolling"
+    ],
+    "categories": [
+      "Product"
+    ],
+    "video": true
+  },
+  {
+    "title": "Spinning Donut",
+    "content": "3D/Spinning Donut.webm",
+    "layout": [
+      "ZineScrolling"
+    ],
+    "categories": [
+      "Geo Nodes"
+    ],
+    "video": true
+  },
+  {
+    "title": "Stairs",
+    "content": "3D/Stairs.webm",
+    "layout": [
+      "PresentationScrolling"
+    ],
+    "categories": [
+      "Led Zeppelin"
+    ],
+    "video": true
+  },
+  {
+    "title": "Untitled Unmastered",
+    "content": "3D/Untitled Unmastered.jpg",
+    "layout": [
+      "PresentationScrolling"
+    ],
+    "categories": [
+      "House"
+    ],
+    "video": false
+  }
+]

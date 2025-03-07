@@ -118,7 +118,7 @@ def generate_tsx_file(folder):
 
 def generate_3dgroups():
     """
-    Generate a ThreeDGroups.json file that lists all 3D project groups.
+    Generate a threed.json file that lists all 3D project groups.
     Each group contains a title, a thumbnail (or first media file if thumbnail is missing),
     an array of categories, and a video flag.
     """
@@ -144,13 +144,13 @@ def generate_3dgroups():
             print(f"Adding group: {group}")
             three_d_groups.append(group)
 
-    print(f"Final ThreeDGroups: {json.dumps(three_d_groups, indent=2)}")
+    print(f"Final threed: {json.dumps(three_d_groups, indent=2)}")
 
-    groups_path = os.path.join(OUTPUT_DIR, 'ThreeDGroups.json')
+    groups_path = os.path.join(OUTPUT_DIR, 'threed.json')
     groups_content = f"{json.dumps(three_d_groups, indent=2)}"
     with open(groups_path, 'w', encoding='utf-8') as f:
         f.write(groups_content)
-    print(f"Generated ThreeDGroups.json at: {groups_path}")
+    print(f"Generated threed.json at: {groups_path}")
 
 
 def main():

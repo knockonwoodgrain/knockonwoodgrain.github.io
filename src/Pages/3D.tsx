@@ -1,6 +1,6 @@
 import ProjectBox from "../Gallery/ProjectBox";
 import BGVideo from "../Video";
-import ThreeDGroups from "./3D/ThreeDGroups.json"
+import ThreeDGroups from "./3D/threed.json"
 
 function ThreeDSelect() {
   return (
