@@ -1,4 +1,3 @@
-import SocialIcons from "./Social";
 import AboutIcons from "./SocialAbout";
 
 let para =
