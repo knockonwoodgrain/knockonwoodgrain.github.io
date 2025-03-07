@@ -82,6 +82,7 @@
   --halationm: 0 0px 2px rgb(255, 0, 0);
   --whiteborder: 0px solid rgb(255, 225, 255);
   --whiteradius: 1vw;
+  --pageradius: 0.5vw;
   --icon: rgba(200, 200, 200, 1);
   --category: rgba(60, 60, 60, 1);
 }
@@ -322,7 +323,7 @@ a {
   width: 100%;
   display: flex;
   align-items: end;
-  border-radius: var(--whiteradius);
+  border-radius: var(--pageradius);
 }
 .VDKSelect {
   font-size: 6vw;
@@ -339,6 +340,7 @@ a {
 @media only screen and (max-width: 768px) {
   :root{
     --whiteradius: 2.6vw;
+    --pageradius: 1vw;
   }
   .title {
     font-size: 10.5vw;
@@ -406,6 +408,16 @@ a {
     align-items: center;
     overflow: auto;
   }
+  .dwicon{
+    height: 9vw;
+  }
+  .icon{
+    height: 7vw;
+  }
+  .ProjIcons{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
   .ProjectPageTitleContainer {
     position: relative;
     flex-direction: column;
@@ -418,6 +430,7 @@ a {
   .ProjectPageTitle {
     width: fit-content;
     font-size: 10vw;
+    margin-bottom: 6vw;
   }
   .ProjectPageText {
     font-size: 4vw;
@@ -441,6 +454,9 @@ a {
   .ZinePage {
     width: calc((100% / 2) - 2.67vw);
     margin: 1vw;
+  }
+  .Page{
+    border-radius: var(--pageradius);
   }
   .PresentationPage {
     margin: 1vw;

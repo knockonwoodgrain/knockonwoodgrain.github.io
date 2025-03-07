@@ -1,0 +1,28 @@
+[
+  {
+    "title": "VDK HBPT RUX",
+    "content": "Thumbnail/VDK.webp",
+    "categories": ["Zine", "Experimental", "Writing"]
+  },
+  {
+    "title": "Spectrum",
+    "content": "Thumbnail/Spectrum.jpg",
+    "categories": ["Zine", "Experimental", "Writing"]
+  },
+  {
+    "title": "IGOR",
+    "content": "Thumbnail/IGOR.jpg",
+    "categories": ["Zine", "Tribute"]
+  },
+  {
+    "title": "Postember",
+    "content": "Thumbnail/Postember.jpg",
+    "categories": ["Posters"]
+  },
+  {
+    "title": "Untitled",
+    "content": "Thumbnail/Untitled.webp",
+    "categories": ["Posters", "Experimental", "Writing"]
+  }
+]
+

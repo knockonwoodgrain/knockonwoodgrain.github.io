@@ -1,49 +1,7 @@
 import ProjectBox from "./ProjectBox";
+import arts from "./arts.json" 
+import designs from "./designs.json"
 
-const designs = [
-  {
-    title: "Mindset",
-    content: "Thumbnail/SDP.jpg",
-    categories: ["Zine", "Design Project"],
-  },
-  {
-    title: "CFG Branding",
-    content: "Thumbnail/CFG.jpg",
-    categories: ["Branding", "Illustration"],
-  },
-  {
-    title: "UX Portfolio",
-    content: "Thumbnail/Website.jpg",
-    categories: ["UX", "Website"],
-  },
-];
-const arts = [
-  {
-    title: "VDK HBPT RUX",
-    content: "Thumbnail/VDK.webp",
-    categories: ["Zine", "Experimental", "Writing"],
-  },
-  {
-    title: "Spectrum",
-    content: "Thumbnail/Spectrum.jpg",
-    categories: ["Zine", "Experimental", "Writing"],
-  },
-  {
-    title: "IGOR",
-    content: "Thumbnail/IGOR.jpg",
-    categories: ["Zine", "Tribute"],
-  },
-  {
-    title: "Postember",
-    content: "Thumbnail/Postember.jpg",
-    categories: ["Posters"],
-  },
-  {
-    title: "Untitled",
-    content: "Thumbnail/Untitled.webp",
-    categories: ["Posters", "Experimental", "Writing"],
-  },
-];
 function Projects() {
   return (
     <>

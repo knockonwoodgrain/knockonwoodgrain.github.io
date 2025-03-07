@@ -10,7 +10,7 @@ os.makedirs(output_dir, exist_ok=True)
 def load_descriptions():
     description_file = os.path.join(public_dir, 'metadata.json')  # Use .json file
     if not os.path.exists(description_file):
-        print("description.json not found in Photos folder.")
+        print("metadata.json not found in Photos folder.")
         return {}
 
     try:

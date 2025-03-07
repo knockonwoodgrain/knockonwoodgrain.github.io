@@ -37,7 +37,7 @@ const dynamicRoutes = Object.entries(modules).map(([path, module]) => {
   return {
     path: routePath,
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="Loading">Loading...</div>}>
         <Component />
       </Suspense>
     ),
@@ -57,27 +57,6 @@ const staticRoutes = [
   },
 ];
 
-// Add dynamic routes for photography projects
-//const photographyRoutes = [
-//  {
-//    path: "/Photography",
-//    element: (
-//      <Suspense fallback={<div>Loading...</div>}>
-//        <PhotosSelect />
-//      </Suspense>
-//    ),
-//  },
-//  {
-//    path: "/Photography/:projectName",
-//    element: (
-//      <Suspense fallback={<div>Loading...</div>}>
-//        <ProjectPage />
-//      </Suspense>
-//    ),
-//  },
-//];
-
-// Combine static, dynamic, and photography routes
 const router = createHashRouter([...staticRoutes, ...dynamicRoutes]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

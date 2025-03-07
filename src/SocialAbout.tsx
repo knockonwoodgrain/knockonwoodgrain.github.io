@@ -1,12 +1,12 @@
 import { Fragment } from "react";
 
 const yticon = [
-  //{
-  //  href: "https://www.youtube.com/@knockonwoodgrain",
-  //  pathdata:
-  //    "M172.32,19.36c-2.02-7.62-7.99-13.62-15.56-15.66C143.04,0,88,0,88,0c0,0-55.04,0-68.76,3.7-7.57,2.04-13.54,8.04-15.56,15.66C0,33.18,0,62,0,62c0,0,0,28.82,3.68,42.64,2.02,7.62,7.99,13.62,15.56,15.66,13.73,3.7,68.76,3.7,68.76,3.7,0,0,55.04,0,68.76-3.7,7.57-2.04,13.54-8.04,15.56-15.66,3.68-13.81,3.68-42.64,3.68-42.64,0,0,0-28.82-3.68-42.64ZM70,88.17v-52.34l46,26.17-46,26.17Z",
-  //  viewboxx: "0 0 176 124",
-  //},
+  {
+    href: "https://www.youtube.com/@knockonwoodgrain",
+    pathdata:
+      "M172.32,19.36c-2.02-7.62-7.99-13.62-15.56-15.66C143.04,0,88,0,88,0c0,0-55.04,0-68.76,3.7-7.57,2.04-13.54,8.04-15.56,15.66C0,33.18,0,62,0,62c0,0,0,28.82,3.68,42.64,2.02,7.62,7.99,13.62,15.56,15.66,13.73,3.7,68.76,3.7,68.76,3.7,0,0,55.04,0,68.76-3.7,7.57-2.04,13.54-8.04,15.56-15.66,3.68-13.81,3.68-42.64,3.68-42.64,0,0,0-28.82-3.68-42.64ZM70,88.17v-52.34l46,26.17-46,26.17Z",
+    viewboxx: "0 0 176 124",
+  },
   {
     href: "https://instagram.com/knockonwoodgrain",
     pathdata:
@@ -26,7 +26,7 @@ const socialIcon = (href: string, pathdata: string, viewboxx: string) => {
   );
 };
 
-function SocialIcons() {
+function AboutIcons() {
   return (
     <div className="iconpanel Contact">
       {yticon.map((icon) =>
@@ -36,4 +36,4 @@ function SocialIcons() {
   );
 }
 
-export default SocialIcons;
+export default AboutIcons;
