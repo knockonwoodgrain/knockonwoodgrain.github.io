@@ -1,1 +1,0 @@
-import{j as e,B as s}from"./index-Cte6SJHx.js";function a(){return e.jsxs(e.Fragment,{children:[e.jsx(s,{}),e.jsx("div",{className:"VDKSelectContain",children:e.jsx("a",{href:"https://spectrummag.github.io/",className:"Link",children:e.jsx("div",{className:"VDKSelect",children:"Issue 1"})})})]})}export{a as default};

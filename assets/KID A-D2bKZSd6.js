@@ -1,1 +1,0 @@
-import{j as e}from"./index-Cte6SJHx.js";import t from"./Project-Dq6MHS5l.js";import"./BackButton-CDJJ_HwV.js";const o={title:"KID A",text:"KID A album cover recreation, done in blender by accident",layout:"ZineScrolling",Content:["3D/KID A/KIDA.png","3D/KID A/KIDA.webp"],category:"Experiment",video:!1};function a(){return e.jsx(t,{...o})}export{a as default};

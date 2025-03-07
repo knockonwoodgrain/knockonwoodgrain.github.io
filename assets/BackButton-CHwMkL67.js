@@ -1,0 +1,1 @@
+import{u as s,j as a}from"./index-i3fchdl6.js";function e(){const t=s();return a.jsx("button",{className:"BackButton",onClick:()=>t(-1),children:a.jsx("span",{className:"material-symbols-outlined",children:"arrow_back"})})}export{e as default};
