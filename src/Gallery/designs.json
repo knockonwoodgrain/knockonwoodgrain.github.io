@@ -1,18 +1,23 @@
 [
   {
+    "title": "The Gom Jabbar Collection",
+    "thumbnail": "Thumbnail/Dune.jpg",
+    "categories": ["3D", "Collaboration"]
+  },
+  {
     "title": "Mindset",
-    "content": "Thumbnail/SDP.jpg",
+    "thumbnail": "Thumbnail/SDP.jpg",
     "categories": ["Zine", "Design Project"]
   },
   {
-    "title": "CFG Branding",
-    "content": "Thumbnail/CFG.jpg",
-    "categories": ["Branding", "Illustration"]
+    "title": "Jolies Magic of Summer",
+    "thumbnail": "Thumbnail/Jolies.jpg",
+    "categories": ["Poster", "DAM Design"]
   },
   {
-    "title": "UX Portfolio",
-    "content": "Thumbnail/Website.jpg",
-    "categories": ["UX", "Website"]
+    "title": "CFG Branding",
+    "thumbnail": "Thumbnail/CFG.jpg",
+    "categories": ["Branding", "Illustration"]
   }
 ]
 

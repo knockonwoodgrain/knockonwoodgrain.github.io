@@ -2,8 +2,11 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 function ProjectBox(project: {
+  folder?:string;
   title: string;
-  content: string;
+  description?: string;
+  layout?: string;
+  thumbnail: string;
   video?: boolean;
   categories: Array<string>;
 }) {
@@ -15,12 +18,12 @@ function ProjectBox(project: {
           {project.video ? (
             // Render video tag if format is true
             <video autoPlay muted={isMuted.current} loop className="thumbnail">
-              <source src={project.content} type="video/mp4" />
+              <source src={project.thumbnail} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           ) : (
             // Render img tag if format is false
-            <img className="thumbnail" src={project.content} alt="Thumbnail" />
+            <img className="thumbnail" src={project.thumbnail} alt="Thumbnail" />
           )}
           <div className="ProjectText"> {project.title} </div>
           <div className="CategoryContainer">

@@ -1,6 +1,6 @@
 import ProjectBox from "../Gallery/ProjectBox";
 import BGVideo from "../Video";
-import ThreeDGroups from "./3D/threed.json"
+import ThreeDGroups from "../../public/3D/metadata.json"
 
 function ThreeDSelect() {
   return (
@@ -12,7 +12,7 @@ function ThreeDSelect() {
             key={project.title} // Adding a unique key using the index
             {...project}
           />
-        ))}
+        ))}content
       </div>
       <div className="space" />
       <BGVideo />
