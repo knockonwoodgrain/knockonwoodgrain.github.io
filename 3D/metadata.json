@@ -1,90 +1,101 @@
 [
   {
-    "folder name": "All In One",
+    "folder": "All In One",
     "title": "All In One",
     "description": "All of the renders I did previously in one",
     "layout": "ZineScrolling",
-    "category": "Animation",
-    "video" : true
+    "categories": ["Animation"],
+    "video": true,
+    "thumbnail": "3D/All In One.mp4"
   },
   {
-    "folder name": "Coffee",
+    "folder": "Coffee",
     "title": "Coffe",
     "description": "Coffee to keep your lips warm, prototype for a cup that tells you the temperature",
     "layout": "ZineScrolling",
-    "category": "Product",
-    "video" : true
+    "categories": ["Product"],
+    "video": true,
+    "thumbnail": "3D/Coffee.mp4"
   },
   {
-    "folder name": "Dark Side",
+    "folder": "Dark Side",
     "title": "Dark Side",
     "description": "A recreation of the prism from the cover of 'Dark Side Of The Moon' by Pink Floyd",
     "layout": "ZineScrolling",
-    "category": "Experiment",
-    "video" : false 
+    "categories": ["Experiment"],
+    "video": false,
+    "thumbnail": "3D/Dark Side.webp"
   },
   {
-    "folder name": "KID A",
+    "folder": "KID A",
     "title": "KID A",
     "description": "KID A album cover recreation, done in blender by accident",
     "layout": "ZineScrolling",
-    "category": "Experiment",
-    "video" : false 
+    "categories": ["Experiment"],
+    "video": false,
+    "thumbnail": "3D/KID A.webp"
   },
   {
-    "folder name": "Mine",
+    "folder": "Mine",
     "title": "Mine",
     "description": "How come the ecstasy always depresses me so?,\nChemically, I don't have no more new places to go",
     "layout": "ZineScrolling",
-    "category": "Frank Ocean",
-    "video" : false 
+    "categories": ["Frank Ocean"],
+    "video": false,
+    "thumbnail": "3D/Mine.jpg"
   },
   {
-    "folder name": "NakedBodies",
+    "folder": "NakedBodies",
     "title": "Naked Bodies",
     "description": "Tried making one human form, and then a lot of them repeated",
     "layout": "ZineScrolling",
-    "category": "NSFW",
-    "video" : false 
+    "categories": ["NSFW"],
+    "video": false,
+    "thumbnail": "3D/NakedBodies.jpg"
   },
   {
-    "folder name": "NY Quickstep",
+    "folder": "NY Quickstep",
     "title": "NY Quickstep",
     "description": "A very original perfume concept, not inspired by French Waltz",
     "layout": "ZineScrolling",
-    "category": "Product",
-    "video" : false 
+    "categories": ["Product"],
+    "video": false,
+    "thumbnail": "3D/NY Quickstep.jpg"
   },
   {
-    "folder name": "Phone",
+    "folder": "Phone",
     "title": "Phone",
     "description": "I had a broken phone, so I thought atleast I can day dream",
     "layout": "ZineScrolling",
-    "category": "Product",
-    "video" : true 
+    "categories": ["Product"],
+    "video": true,
+    "thumbnail": "3D/Phone.mp4"
   },
   {
-    "folder name": "Spinning Donut",
+    "folder": "Spinning Donut",
     "title": "Spinning Donut",
     "description": "I was just trying to learn geometry nodes",
     "layout": "ZineScrolling",
-    "category": "Geo Nodes",
-    "video" : true
+    "categories": ["Geo Nodes"],
+    "video": true,
+    "thumbnail": "3D/Spinning Donut.webm"
   },
   {
-    "folder name": "Stairs",
+    "folder": "Stairs",
     "title": "Stairway to Heaven",
     "description": "There's a lady who's sure all that glitters is gold.\nAnd she's buying a stairway to Heaven",
     "layout": "PresentationScrolling",
-    "category": "Led Zeppelin",
-    "video" : true
+    "categories": ["Led Zeppelin"],
+    "video": true,
+    "thumbnail": "3D/Stairs.webm"
   },
   {
-    "folder name": "Untitled Unmastered",
+    "folder": "Untitled Unmastered",
     "title": "Untitled Unmastered",
     "description": "I had a dream about this house, and so I made it",
     "layout": "PresentationScrolling",
-    "category": "House",
-    "video" : false 
+    "categories": ["House"],
+    "video": false,
+    "thumbnail": "3D/Untitled Unmastered.jpg"
   }
 ]
