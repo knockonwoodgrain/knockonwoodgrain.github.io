@@ -1,1 +1,0 @@
-import{j as t}from"./index-C9Tz1BTu.js";import n from"./Project-BZLurtrm.js";import"./Social-CsYCWf1z.js";import"./BackButton-DlHNLbIp.js";const o={title:"Spinning Donut",text:"I was just trying to learn geometry nodes",layout:"ZineScrolling",Content:["3D/Spinning Donut/Trip.webm"],category:"Geo Nodes",video:!0};function p(){return t.jsx(n,{...o})}export{p as default};
