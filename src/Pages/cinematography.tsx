@@ -4,12 +4,12 @@ import Film from "./Film.tsx";
 const Videos = [
   {
     title: "Mumbai 2025",
-    src: "/Cinematography/Trailer AV1.mp4",
+    src: "https://storage.googleapis.com/knockonwoodgrain/Mumbai%202025%20AV1.mp4",
     thumbnail: "/Cinematography/Trailer AV1.jpg",
   },
   {
     title: "Night Life",
-    src: "/Cinematography/Night Life AV1.mp4",
+    src: "https://storage.googleapis.com/knockonwoodgrain/Night%20Life%20AV1.mp4",
     thumbnail: "/Cinematography/Night Life AV1.jpg",
   },
   {
@@ -19,8 +19,13 @@ const Videos = [
   },
   {
     title: "Decayed Hermit",
-    src: "/Cinematography/FCP AV1.mp4",
+    src: "https://storage.googleapis.com/knockonwoodgrain/FCP%20AV1.mp4",
     thumbnail: "/Cinematography/FCP AV1.jpg",
+  },
+  {
+    title: "Valentines Day",
+    src: "https://storage.googleapis.com/knockonwoodgrain/Valentines%20AV1.mp4",
+    thumbnail: "/Cinematography/Valentines AV1.jpg",
   }
 ];
 

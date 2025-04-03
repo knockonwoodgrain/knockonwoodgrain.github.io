@@ -3,6 +3,7 @@ import Projects from "./Gallery/Projects";
 import Gallery from "./Gallery/Gallery";
 import BGVideo from "./Video";
 import Cinematography from "./Pages/cinematography";
+import IndexPhotography from "./Pages/IndexPhotography";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <About />
       <div className="space" />
       <Cinematography />
+      <IndexPhotography />
       <Projects />
       <Gallery />
       <div className="space" />

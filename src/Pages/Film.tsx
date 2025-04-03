@@ -43,6 +43,8 @@ function Film({ videodata }: { videodata: { title: string; src: string; thumbnai
    }
  }, []);
 
+ console.log("Has the video Loaded?", isVideoLoaded)
+
  const handleVideoEnd = () => {
     setIsPlaying(false);
   };
@@ -59,6 +61,16 @@ function Film({ videodata }: { videodata: { title: string; src: string; thumbnai
       }
     };
 
+ const toggleFullscreen = () => {
+    if (videoRef.current) {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      } else {
+        videoRef.current.requestFullscreen();
+      }
+    }
+ };
+
 
 const formatTime = (time: number) => {
   const minutes = Math.floor(time / 60);
@@ -68,10 +80,14 @@ const formatTime = (time: number) => {
 
  return (
     <>
-    <div className="cinematographyContainer" onClick={togglePlayPause} >
+    <div className={`cinematographyContainer ${!isVideoLoaded ? "ratio" : ""}`} onClick={togglePlayPause} >
+      <img className={`videocover ${isVideoLoaded ? "hidden" : ""}`} src={videodata.thumbnail}/>
       <div className={`videotitle ${isPlaying || !isVideoLoaded ? "hidden" : ""}`}>{videodata.title}</div>
-      <div className={`timestamp ${isPlaying ? "hidden" : ""}`}>
+      <div className={`timestamp ${isPlaying || !isVideoLoaded ? "hidden" : ""}`}>
         {formatTime(currentTime)} / {formatTime(duration)}
+      </div>
+      <div className={`FilmFullscreen ${!isPlaying || !isVideoLoaded ? "visible" : ""} ${isPlaying ? "hidden" : ""}`} onClick={toggleFullscreen}>
+      <svg className="FilmFullscreenSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M104-104v-206h73v133h133v73H104Zm546 0v-73h134v-133h72v206H650ZM104-650v-206h206v72H177v134h-73Zm680 0v-134H650v-72h206v206h-72Z"/></svg>
       </div>
       <video
         ref={videoRef}
