@@ -16,7 +16,8 @@ const WavesPage = {
     "Waves/waves report8.jpg",
     "Waves/waves report9.jpg",
     "Waves/waves report10.jpg",
-    "Waves/waves report11.jpg"
+    "Waves/waves report11.jpg",
+    "Waves/waves report12.jpg"
   ],
 };
 function Waves() {

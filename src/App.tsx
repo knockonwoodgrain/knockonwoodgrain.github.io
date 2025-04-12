@@ -10,9 +10,9 @@ function App() {
     <>
       <About />
       <div className="space" />
+      <Projects />
       <Cinematography />
       <IndexPhotography />
-      <Projects />
       <Gallery />
       <div className="space" />
       <BGVideo />

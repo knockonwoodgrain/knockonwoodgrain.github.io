@@ -83,6 +83,7 @@ const formatTime = (time: number) => {
     <div className={`cinematographyContainer ${!isVideoLoaded ? "ratio" : ""}`} onClick={togglePlayPause} >
       <img className={`videocover ${isVideoLoaded ? "hidden" : ""}`} src={videodata.thumbnail}/>
       <div className={`videotitle ${isPlaying || !isVideoLoaded ? "hidden" : ""}`}>{videodata.title}</div>
+      <div className={`videoplaynotice ${isPlaying || !isVideoLoaded ? "hidden" : ""}`}>click to play</div>
       <div className={`timestamp ${isPlaying || !isVideoLoaded ? "hidden" : ""}`}>
         {formatTime(currentTime)} / {formatTime(duration)}
       </div>
