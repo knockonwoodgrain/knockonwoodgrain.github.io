@@ -135,6 +135,35 @@ const Photographs = [
     ]
   },
   {
+    title: "Prabhat Road",
+    thumbnail: "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road.webp",
+    src: [
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road001.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road002.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road003.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road004.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road005.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road006.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road007.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road008.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road009.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road0010.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road0011.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road0012.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road0013.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road0014.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road0015.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road0016.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road0017.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road0018.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Prabhat Road/Prabhat Road0019.webp",
+    ],
+    categories: [
+      "28th Feb 2025",
+      "Walk"
+    ]
+  },
+  {
     title: "Sufi Nite",
     thumbnail: "https://storage.googleapis.com/knockonwoodgrain/Photos/Sufi Nite.webp",
     src: [
