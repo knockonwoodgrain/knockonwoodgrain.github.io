@@ -1,27 +1,32 @@
 [
   {
     "title": "The Gom Jabbar Collection",
-    "thumbnail": "Thumbnail/Dune.jpg",
+    "thumbnail": "Thumbnail/Dune.webp",
     "categories": ["3D", "Collaboration"]
   },
   {
+    "title": "Amrut",
+    "thumbnail": "Thumbnail/Amrut.webp",
+    "categories": ["Packaging Design", "Branding"]
+  },
+  {
     "title": "Mindset",
-    "thumbnail": "Thumbnail/SDP.jpg",
+    "thumbnail": "Thumbnail/SDP.webp",
     "categories": ["Zine", "Design Project"]
   },
   {
     "title": "Jolies Magic of Summer",
-    "thumbnail": "Thumbnail/Jolies.jpg",
+    "thumbnail": "Thumbnail/Jolies.webp",
     "categories": ["Poster", "DAM Design"]
   },
   {
     "title": "CFG Branding",
-    "thumbnail": "Thumbnail/CFG.jpg",
+    "thumbnail": "Thumbnail/CFG.webp",
     "categories": ["Branding", "Illustration"]
   },
   {
     "title": "Waves",
-    "thumbnail": "Thumbnail/Waves.jpg",
+    "thumbnail": "Thumbnail/Waves.webp",
     "categories": ["Club", "Music"]
   }
 ]
