@@ -3,10 +3,10 @@ import Project from "./Project";
 const CompanionPage = {
   title: "Companion",
   text: "A social impact project",
-  download: "Companion/Companion.zip",
+  download: "https://storage.googleapis.com/knockonwoodgrain/Companion/Companion.zip",
   layout: "PresentationScrolling",
   Content: [
-    "Companion/Individual1.webp",
+    "Companion/Individual.webp",
     "Companion/Individual2.webp",
     "Companion/Individual3.webp",
     "Companion/Individual4.webp",
@@ -37,7 +37,7 @@ const CompanionPage = {
     "Companion/Individual29.webp",
     "Companion/Individual30.webp",
     "Companion/Individual31.webp",
-    "Companion/Group1.webp",
+    "Companion/Group.webp",
     "Companion/Group2.webp",
     "Companion/Group3.webp",
     "Companion/Group4.webp",
