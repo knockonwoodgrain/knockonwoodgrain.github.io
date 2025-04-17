@@ -1,1 +1,0 @@
-import{j as n}from"./index-C8pw34x3.js";import t from"./Project-9Fme5EGy.js";import"./Social-d7SZ2Ljk.js";import"./BackButton-CQAQvz2v.js";const e={title:"All In One",text:"All of the renders I did previously in one",layout:"ZineScrolling",Content:["3D/All In One/AllInOneFinal.mp4"],category:"Animation",video:!0};function m(){return n.jsx(t,{...e})}export{m as default};
