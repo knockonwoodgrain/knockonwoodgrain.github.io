@@ -1,0 +1,1 @@
+import{u as t,j as a}from"./index-C8pw34x3.js";function e(){const s=t();return a.jsxs("button",{className:"BackButton",onClick:()=>s(-1),children:[a.jsx("span",{className:"material-symbols-outlined",children:"arrow_back"}),a.jsx("div",{className:"BackText",children:"KnockOnWoodGrain"})]})}export{e as default};
