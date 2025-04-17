@@ -10,6 +10,11 @@
     "categories": ["Packaging Design", "Branding"]
   },
   {
+    "title": "Companion",
+    "thumbnail": "Thumbnail/Companion.webp",
+    "categories": ["Social Impact", "UI UX"]
+  },
+  {
     "title": "Mindset",
     "thumbnail": "Thumbnail/SDP.webp",
     "categories": ["Zine", "Design Project"]
