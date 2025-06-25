@@ -37,7 +37,21 @@ const dynamicRoutes = Object.entries(modules).map(([path, module]) => {
   return {
     path: routePath,
     element: (
-      <Suspense fallback={<div className="Loading">Loading...</div>}>
+      <Suspense fallback={<div className="Loading">Dreaming a thought that could dream about a thought <br />
+That could think of the dreamer that thought <br />
+That could think of dreaming and getting a glimmer of God <br />
+I be dreaming a dream in a thought <br />
+That could dream about a thought <br />
+That could think of dreaming a dream <br />
+Where I cannot, where I cannot <br />
+<br />
+Less morose and more present <br />
+Dwell on my gifts for a second <br />
+A moment one solar flare would consume, so why not <br />
+Spin this flammable paper on the film that's my life <br />
+High flights, inhale the vapor, exhale once and think twice <br />
+Eat some shrooms, maybe have a good cry, about you <br />
+See some colors, light hang glide off the moon</div>}>
         <Component />
       </Suspense>
     ),

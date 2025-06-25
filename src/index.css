@@ -98,6 +98,18 @@ body {
   background-size: cover;
   margin: 0;
 }
+.Loading {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 100vh;
+  margin-right: 20vw;
+  margin-left: 20vw;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+}
 img,video{
   mix-blend-mode: normal;
 }

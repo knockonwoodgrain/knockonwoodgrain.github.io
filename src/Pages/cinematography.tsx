@@ -3,6 +3,11 @@ import Film from "./Film.tsx";
 
 const Videos = [
   {
+    title: "Goa 2025",
+    src: "https://storage.googleapis.com/knockonwoodgrain/Goa%202025%20AV1.MP4",
+    thumbnail: "/Cinematography/Goa 2025 AV1.jpg",
+  },
+  {
     title: "Mumbai 2025",
     src: "https://storage.googleapis.com/knockonwoodgrain/Mumbai%202025%20AV1.mp4",
     thumbnail: "/Cinematography/Trailer AV1.jpg",
