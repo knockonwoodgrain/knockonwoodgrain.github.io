@@ -3,6 +3,11 @@ import Film from "./Film.tsx";
 
 const Videos = [
   {
+    title: "Scraps",
+    src: "https://storage.googleapis.com/knockonwoodgrain/Scraps%20New%20AV1.MP4",
+    thumbnail: "/Cinematography/Scraps New AV1.jpg",
+  },
+  {
     title: "Goa 2025",
     src: "https://storage.googleapis.com/knockonwoodgrain/Goa%202025%20AV1.MP4",
     thumbnail: "/Cinematography/Goa 2025 AV1.jpg",
@@ -44,7 +49,7 @@ function Cinematography() {
   };
   return (
     <>
-    <div className="ProjectTitle">Cinematography</div>
+    <div className="ProjectTitle">Films</div>
       {/* Pass the current selected video to the Film component */}
       <Film key={Videos[currentIndex].src} videodata={Videos[currentIndex]} />
       <div className="FilmGrid">

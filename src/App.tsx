@@ -10,8 +10,8 @@ function App() {
     <>
       <About />
       <div className="space" />
-      <Projects />
       <Cinematography />
+      <Projects />
       <IndexPhotography />
       <Gallery />
       <div className="space" />
