@@ -1,0 +1,2 @@
+import{j as t}from"./index-zU3jOIVA.js";import e from"./Project-hAFZx1GD.js";import"./Social-B6Eheu7G.js";import"./BackButton-DNvYLGrl.js";const r={title:"Stairs",text:`There's a lady who's sure all that glitters is gold.
+And she's buying a stairway to Heaven`,layout:"PresentationScrolling",Content:["3D/Stairs/Stairs.webm"],category:"Led Zeppelin",video:!0};function n(){return t.jsx(e,{...r})}export{n as default};

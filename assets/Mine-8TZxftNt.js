@@ -1,2 +1,0 @@
-import{j as e}from"./index-U4fGU-75.js";import o from"./Project-CptKiLlo.js";import"./Social-BP2_FtS7.js";import"./BackButton-Dtijz8r3.js";const t={title:"Mine",text:`How come the ecstasy always depresses me so?,
-Chemically, I don't have no more new places to go`,layout:"ZineScrolling",Content:["3D/Mine/Mine.webp"],category:"Frank Ocean",video:!1};function i(){return e.jsx(o,{...t})}export{i as default};
