@@ -1,0 +1,1 @@
+import{j as t}from"./index-CdIbmzqr.js";import o from"./Project-ZQVLLqEg.js";import"./Social-Cqb4xAk-.js";import"./BackButton-9h1z-XGg.js";const e={title:"Phone",text:"I had a broken phone, so I thought atleast I can day dream",layout:"ZineScrolling",Content:["3D/Phone/Phone1.mp4"],category:"Product",video:!0};function m(){return t.jsx(o,{...e})}export{m as default};
