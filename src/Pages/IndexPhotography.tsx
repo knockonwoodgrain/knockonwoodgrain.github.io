@@ -1,5 +1,6 @@
 import { useState } from "react";
-import PhotoDisplay from "./PhotoDisplay.tsx";
+import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 const Photographs = [
   {
@@ -24,22 +25,6 @@ const Photographs = [
     ],
     categories: [
       "15th May 2024",
-      "Trip"
-    ]
-  },
-  {
-    title: "Goa Blue",
-    thumbnail: "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa Blue.webp",
-    src: [
-      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue001.webp",
-      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue002.webp",
-      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue003.webp",
-      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue004.webp",
-      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue005.webp",
-      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue006.webp",
-    ],
-    categories: [
-      "16th May 2024",
       "Trip"
     ]
   },
@@ -211,6 +196,22 @@ const Photographs = [
       "2nd August 2024",
       "Trip"
     ]
+  },
+  {
+    title: "Goa Blue",
+    thumbnail: "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa Blue.webp",
+    src: [
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue001.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue002.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue003.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue004.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue005.webp",
+      "https://storage.googleapis.com/knockonwoodgrain/Photos/Goa/Goa Blue006.webp",
+    ],
+    categories: [
+      "16th May 2024",
+      "Trip"
+    ]
   }
 ];
 
@@ -235,14 +236,16 @@ function IndexPhotography() {
   };
   return (
     <>
+    < div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
     <div className="ProjectTitle">Photography</div>
-      {/* Pass the current selected photograph to the Film component */}
-      <PhotoDisplay key={Photographs[currentIndex].thumbnail} photodata={Photographs[currentIndex]} />
-      <div className="FilmGrid">
+      <div className="PhotoGrid">
         {Photographs.map((photograph, index) => (
-          <div
+          <Link key={index} to={"/Photography/" + photograph.title} >
+          <motion.div
+            whileHover={{scale: 1.05}}
+            whileTap={{scale: 0.95 }}
             key={photograph.title}
-            className="FilmContainer"
+            className="PhotoContainer"
             onClick={() => handleThumbnailClick(index)}
           >
             <img
@@ -250,7 +253,7 @@ function IndexPhotography() {
               alt={photograph.title}
               className="thumbnail"
             />
-            <div className="FilmTitle">{photograph.title}</div>
+            <div className="PhotoTitle">{photograph.title}</div>
             <div className="CategoryContainer">
             {photograph.categories.map((category, index) => (
               <div key={index} className="Category">
@@ -258,9 +261,11 @@ function IndexPhotography() {
               </div>
             ))}
           </div>
-          </div>
+          </motion.div>
+        </Link > 
         ))}
       </div>
+    </div>
     </>
   );
 }

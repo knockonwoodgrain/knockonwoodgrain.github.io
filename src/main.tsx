@@ -8,6 +8,7 @@ import "./index.css";
 const modules = {
   ...import.meta.glob("./*.tsx"),           // Scan current directory
   ...import.meta.glob("./Pages/**/*.tsx"),  // Scan Pages directory and subfolders
+  ...import.meta.glob("./Custom/**/*.tsx"),  // Scan Pages directory and subfolders
 };
 
 // Debugging: Log generated modules for paths and elements
@@ -19,7 +20,8 @@ const dynamicRoutes = Object.entries(modules).map(([path, module]) => {
   let routePath = path
     .replace("./", "/")            // Ensure files in root (./) are mapped to /
     .replace(".tsx", "")           // Remove file extension
-    .replace(/\/Pages/g, "");      // Remove the /Pages prefix
+    .replace(/\/Pages/g, "")      // Remove the /Pages prefix
+    .replace(/\/Custom/g, "");      // Remove the /Custom prefix
 
   // Debugging: Log both the original path and the final route
   console.log(`Original path: ${path} -> Final route: ${routePath}`);
@@ -27,31 +29,31 @@ const dynamicRoutes = Object.entries(modules).map(([path, module]) => {
   // Dynamically load the component using React.lazy
   //const Component = React.lazy(() => module().then(mod => ({ default: mod as React.ComponentType<any> })));
   const Component = React.lazy(async () => {
-  const mod = await module() as { default: React.ComponentType<any> };
-  if (!mod || !mod.default) {
-    throw new Error(`Module ${path} does not have a default export.`);
-  }
-  return { default: mod.default as React.ComponentType<any> };
+    const mod = await module() as { default: React.ComponentType<any> };
+    if (!mod || !mod.default) {
+      throw new Error(`Module ${path} does not have a default export.`);
+    }
+    return { default: mod.default as React.ComponentType<any> };
 });
 
   return {
     path: routePath,
     element: (
       <Suspense fallback={<div className="Loading">Dreaming a thought that could dream about a thought <br />
-That could think of the dreamer that thought <br />
-That could think of dreaming and getting a glimmer of God <br />
-I be dreaming a dream in a thought <br />
-That could dream about a thought <br />
-That could think of dreaming a dream <br />
-Where I cannot, where I cannot <br />
-<br />
-Less morose and more present <br />
-Dwell on my gifts for a second <br />
-A moment one solar flare would consume, so why not <br />
-Spin this flammable paper on the film that's my life <br />
-High flights, inhale the vapor, exhale once and think twice <br />
-Eat some shrooms, maybe have a good cry, about you <br />
-See some colors, light hang glide off the moon</div>}>
+      That could think of the dreamer that thought <br />
+      That could think of dreaming and getting a glimmer of God <br />
+      I be dreaming a dream in a thought <br />
+      That could dream about a thought <br />
+      That could think of dreaming a dream <br />
+      Where I cannot, where I cannot <br />
+      <br />
+      Less morose and more present <br />
+      Dwell on my gifts for a second <br />
+      A moment one solar flare would consume, so why not <br />
+      Spin this flammable paper on the film that's my life <br />
+      High flights, inhale the vapor, exhale once and think twice <br />
+      Eat some shrooms, maybe have a good cry, about you <br />
+      See some colors, light hang glide off the moon</div>}>
         <Component />
       </Suspense>
     ),

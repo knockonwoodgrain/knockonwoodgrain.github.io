@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { motion } from "motion/react"
 
 const yticon = [
   {
@@ -28,6 +29,7 @@ const whatsapp = [
 ];
 const whatsappIcon = (href: string, pathdata: string, viewboxx: string, text: string) => {
   return (
+    <motion.div key={href} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.90}} >
     <Fragment key={href}>
       <a className="Whatsapp IconLink" href={href}>
         <svg viewBox={viewboxx} className="wicon" >
@@ -36,10 +38,12 @@ const whatsappIcon = (href: string, pathdata: string, viewboxx: string, text: st
         <div>{text}</div>
       </a>
     </Fragment>
+    </motion.div>
   );
 };
 const socialIcon = (href: string, pathdata: string, viewboxx: string, text: string) => {
   return (
+    <motion.div key={href} whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.90}} >
     <Fragment key={href}>
       <a className="IconLink" href={href}>
         <svg viewBox={viewboxx} className="icon">
@@ -48,6 +52,7 @@ const socialIcon = (href: string, pathdata: string, viewboxx: string, text: stri
         <div>{text}</div>
       </a>
     </Fragment>
+  </motion.div>
   );
 };
 

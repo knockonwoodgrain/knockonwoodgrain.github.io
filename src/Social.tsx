@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { motion } from "motion/react";
 
 const yticon = [
   //{
@@ -57,16 +58,16 @@ const socialIcon = (href: string, pathdata: string, viewboxx: string) => {
 function SocialIcons() {
   return (
     <>
-    <div className="Contact">
+    <motion.div whileHover={{scale:1.1}} className="Contact">
       {yticon.map((icon) =>
         socialIcon(icon.href, icon.pathdata, icon.viewboxx)
       )}
-    </div>
-    <div className="Contact">
+    </motion.div>
+    <motion.div whileHover={{scale:1.1}} className="Contact">
       {whatsapp.map((icon) =>
         whatsappIcon(icon.href, icon.pathdata, icon.viewboxx, icon.text)
       )}
-    </div>
+    </motion.div>
     </>
   );
 }

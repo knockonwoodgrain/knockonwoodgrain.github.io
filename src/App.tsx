@@ -1,6 +1,5 @@
 import About from "./About";
 import Projects from "./Gallery/Projects";
-import Gallery from "./Gallery/Gallery";
 import BGVideo from "./Video";
 import Cinematography from "./Pages/cinematography";
 import IndexPhotography from "./Pages/IndexPhotography";
@@ -11,9 +10,10 @@ function App() {
       <About />
       <div className="space" />
       <Cinematography />
-      <Projects />
+      <div className="space" />
       <IndexPhotography />
-      <Gallery />
+      <div className="space" />
+      <Projects />
       <div className="space" />
       <BGVideo />
     </>

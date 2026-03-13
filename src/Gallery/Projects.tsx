@@ -14,6 +14,7 @@ function Projects() {
           />
         ))}
       </div>
+      <div className="space" />
       <div className="ProjectTitle">Art</div>
       <div className="Projects">
         {arts.map((art) => (

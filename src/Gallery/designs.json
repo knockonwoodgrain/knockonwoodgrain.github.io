@@ -1,5 +1,10 @@
 [
   {
+    "title": "Companion",
+    "thumbnail": "Thumbnail/Companion.webp",
+    "categories": ["Social Impact", "UI UX"]
+  },
+  {
     "title": "The Gom Jabbar Collection",
     "thumbnail": "Thumbnail/Dune.webp",
     "categories": ["3D", "Collaboration"]
@@ -10,19 +15,9 @@
     "categories": ["Packaging Design", "Branding"]
   },
   {
-    "title": "Companion",
-    "thumbnail": "Thumbnail/Companion.webp",
-    "categories": ["Social Impact", "UI UX"]
-  },
-  {
     "title": "Mindset",
     "thumbnail": "Thumbnail/SDP.webp",
     "categories": ["Zine", "Design Project"]
-  },
-  {
-    "title": "Jolies Magic of Summer",
-    "thumbnail": "Thumbnail/Jolies.webp",
-    "categories": ["Poster", "DAM Design"]
   },
   {
     "title": "CFG Branding",

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 @font-face {
   font-family: Gambarino;
   src: url("./Fonts/Gambarino-Regular.otf");
@@ -67,15 +69,21 @@
   text-shadow: 0 0px 5px rgb(0, 255, 128);
 }
 ::-webkit-scrollbar {
-  background-color: rgba(10, 15, 15);
-  color: hsl(0, 0, 40);
+  display: none;
+  background-color: rgb(5, 5, 5);
+  color: hsl(0, 0, 40, 0.9);
+  width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: white;
+  background-color: rgb(90, 90, 90);
+  border-radius: 50px;
 }
 :root {
-  --bfont: "Helvetica", sans-serif;
-  --tfont: "Gambarino";
+  --bfont: "Newsreader", sans-serif;
+  --tfont: "Instrument Serif";
+  --hfont: "Gambarino";
+  --btfont: "IBM Plex Sans";
+  --contentwidth: 70vw;
   --halation: 0 0px 2px rgb(255, 0, 0);
   --halationm: 0 0px 2px rgb(255, 0, 0);
   --whiteborder: 0px solid rgb(255, 225, 255);
@@ -121,25 +129,49 @@ img,video{
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
+  min-width: 100vw;
   min-height: 100%;
   z-index: -5;
+}
+#BGBlack {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100%;
+  z-index: -5;
+  background-color: oklch(0.1, 0, 0);
 }
 .title {
   mix-blend-mode: difference;
   max-width: fit-content;
-  font-size: 7vw;
-  font-family: var(--tfont);
+  font-size: 8.2vw;
+  font-family: var(--hfont);
   color: white;
   padding-top: 0.5vw;
+}
+.titleCustom {
+  mix-blend-mode: difference;
+  max-width: fit-content;
+  font-size: 7.2vw;
+  font-family: var(--hfont);
+  color: white;
+  padding-top: 0.5vw;
+}
+.logoCustom {
+  mix-blend-mode: difference;
+  max-width: 60vw;
+  max-height: 8vh;
 }
 .textnphoto {
   mix-blend-mode: difference;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  width: 60vw;
+  width: var(--contentwidth);
+  height: 60vh;
   font-size: 1.4vw;
   padding: 0;
 }
@@ -147,14 +179,16 @@ img,video{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-wrap: pretty;
   width: 40vw;
   font-size: 1.4vw;
+  line-height: 1.8vw;
   padding: 0;
 }
 .me {
-  width: 15vw;
-  height: 15vw;
-  margin-right: 0.6vw;
+  width: 18vw;
+  height: 18vw;
+  margin-right: 3vw;
   border: var(--whiteborder);
   border-radius: var(--whiteradius);
 }
@@ -193,6 +227,7 @@ img,video{
 .ProjDownload, .Whatsapp, .WhatsappProj {
   display: flex;
   font-size: 1.4vw;
+  font-family: var(--btfont);
   max-width: fit-content;
   background-color: white;
   color: white;
@@ -210,13 +245,15 @@ img,video{
   font-size: 1.4vw;
   padding: 1vw;
   padding-bottom: 0;
+  font-weight: 500;
   padding-top: 0;
 }
 .Contact {
   display: flex;
   max-width: fit-content;
   margin-bottom: 0.5vw;
-  font-family: var(--bfont);
+  font-weight: 500;
+  font-family: var(--btfont);
 }
 a {
   width: fit-content;
@@ -226,60 +263,115 @@ a {
   box-sizing: content-box;
 }
 .cinematographyContainer{
+  background: black;
   display: grid;
-  margin-bottom: 3vw;
-  margin-top: 3vw;
-  border-radius: var(--whiteradius);
+  justify-content: center;
+  max-width: 100vw;
+  margin: 0;
   box-shadow: -300px 0px 200px 60px rgba(0, 0, 0, 0.5), 
                300px 0px 200px 60px rgba(0, 0, 0, 0.5);
 }
+.FullHeight{
+  max-height: 100vh;
+}
+.FilmTheatre{
+  display: flex;
+  height: 100vh;
+  max-width: 100vw;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 0;
+}
+.FilmTheatreWide{
+  display: flex;
+  max-width: 100%;
+  max-height: 100vh;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 0;
+}
+
 .cinematography{
   display: flex;
-  width: 60vw;
+  width: var(--contentwidth);
   border-radius: var(--whiteradius);
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
   z-index: 0;
 }
-.FilmGrid{
+.PhotoGrid{
   display: grid;
-  gap: 1.8vw;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2vw;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   padding-top: 1vw;
   z-index: 2;
-  max-width: 60vw;
+  max-width: var(--contentwidth);
+}
+.FilmGrid{
+  display: grid;
+  gap: 2.8vw;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-top: 1vw;
+  z-index: 2;
+  max-width: var(--contentwidth);
 }
 .FilmTitle {
-  display: grid;
-  padding: 0.7vw;
-  padding-bottom: 0.2vw;
-  font-size: 1.3vw;
+  position: absolute;
+  align-self: end;
+  mix-blend-mode: overlay;
+  padding: 2vw;
+  font-size: 1.5vw;
   font-family: var(--bfont);
-  font-weight: 600;
+  font-weight: 400;
+  z-index: 1;
+}
+.PhotoTitle {
+  position: relative;
+  align-self: start;
+  mix-blend-mode: overlay;
+  padding: 1vw;
+  padding-bottom: 0;
+  padding-left: 0.7vw;
+  font-size: 1.7vw;
+  font-family: var(--bfont);
+  font-weight: 400;
+  z-index: 1;
 }
 
-.videotitle, .videoplaynotice {
-  position: absolute;
-  font-family: var(--bfont);
+.videotitle {
+  font-family: var(--tfont);
   font-size: 4vw;
   display: flex;
+  z-index: 1;
+  margin: 2vw; 
+  margin-bottom: 0;
+  text-shadow: 0px 0px 20px black;
+}
+.videotitlestamp{
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-self: center;
+  align-items: center;
+  z-index: 1;
+}
+.videoplaynotice {
+  position: absolute;
+  display: flex;
+  fill: white;
   align-self: center;
   justify-self: center;
   z-index: 1;
   margin: 2vw; 
-  text-shadow: 0px 0px 20px black;
-}
-.videoplaynotice {
-  font-size: 1vw;
-  transform: translateY(3vw);
-  text-decoration: underline;
 }
 .videocover{
   position: absolute;
   display: flex;
-  border-radius: var(--whiteradius);
   z-index: 1;
-  max-width: 60vw;
+  max-height: 100vh;
   aspect-ratio: auto;
 }
 .ratio{
@@ -306,18 +398,23 @@ a {
   fill: white;
 }
 .timestamp{
-  position: absolute;
   font-family: var(--bfont);
   font-size: 1.2vw;
   display: flex;
-  flex-grow: 1;
   z-index: 5;
   margin: 2vw; 
-  align-self: flex-end;
-  justify-self: center;
+  margin-top: 0;
 
 }
 .cinematography.darker{
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+.FilmTheatre.darker{
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+.FilmTheatreWide.darker{
   opacity: 0.5;
   transition: opacity 0.2s ease-in-out;
 }
@@ -327,17 +424,86 @@ a {
 }
 .hidden {
   opacity: 0;
+  visibility: hidden;
+  display: none;
   transition: opacity 0.1s ease-in-out, visibility 0.4s ease-in-out;
+}
+.LostLifePage{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+.ScrapsPage{
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  width: 100vw;
+}
+.LostLifeSide{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  padding: 2vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-width: 100%;
+  max-height: 90vh;
+}
+.ScrapsSide{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  padding: 2vw;
+  align-self: center;
+  max-width: 60vw;
+}
+.FilmPageImage {
+  display: flex;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: var(--pageradius);
+}
+.FilmPageBody{
+  mix-blend-mode: difference;
+  color: oklch(0.9 0 0);
+  line-height: 1.4vw;
+  font-size: 1.2vw;
+  padding-right: 2vw;
+}
+.FilmPageBody p{
+  margin: 0;
+  text-wrap: pretty;
+  font-size: 1.2vw;
+  padding-right: 2vw;
+  font-family: var(--bfont);
+}
+.FilmPageTitle {
+  mix-blend-mode: difference;
+  font-size: 5vw;
+  line-height: 5vw;
+  padding-top: 1.2vw;
+  font-family: var(--tfont);
+}
+.FilmPageSubtitle {
+  mix-blend-mode: difference;
+  font-size: 1vw;
+  color: oklch(0.8 0 0);
+  font-family: var(--bfont);
+}
+.FilmPageHeadings {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 .PhotoDisplayContainer{
   display: grid;
   align-items: center;
-  flex-direction: row;
-  margin-bottom: 3vw;
-  margin-top: 3vw;
-  width: 65vw;
+  flex-direction: column;
+  margin: 0;
+  min-width: 120vh;
+  min-height: 100vh;
+  border-right: 3px solid oklch(0.2 0 0);
   background-color: black;
-  border-radius: var(--whiteradius);
   overflow-x: auto;
   /*box-shadow: -300px 0px 200px 60px rgba(0, 0, 0, 0.5), */
   /*             300px 0px 200px 60px rgba(0, 0, 0, 0.5);*/
@@ -346,19 +512,37 @@ a {
   display: none; /* Hide scrollbar on Webkit (Chrome, Safari) */
 }
 .PhotoDisplayImage{
-  max-height: 75vh;
-  max-width: 50vw;
+  max-height: 70vh;
+  max-width: 80vh;
+  border-radius: 0.3vw;
+}
+.PhotoDisplayCaption{
+  max-width: 55vh;
+  width: fit-content;
+  margin: 3vh;
+  margin-bottom: 0;
+  /* margin-right: 5vh; */
+  /* margin-left: 5vh; */
+  text-wrap: balance;
+  text-align: center;
+  color: oklch(0.9, 0, 0);
+  font-family: var(--bfont);
+  font-size: 2.5vh;
+  line-height: 2.9vh;
+}
+.PhotoDisplayCaption p{
+  margin: 0;
 }
 .PhotoScroll {
   align-items: center;
   min-height: fit-content;
-  max-width: 65vw;
+  max-width: 120vh;
   display: flex;
   overflow-x:scroll;
   scroll-behavior: smooth;
   scroll-snap-stop: always; 
-  /* Instagram-style snapping */
   scroll-snap-type: x mandatory;
+  scrollbar-width: none;
   white-space: nowrap;
 }
 .PhotoScroll::-webkit-scrollbar {
@@ -371,10 +555,15 @@ a {
 }
 .ImageBleed {
   display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
+  align-content: center;
   justify-content: center;
-  min-width: 65vw;
-  min-height: 90vh;
+  padding: 7vh;
+  box-sizing: border-box;
+  min-width: 120vh;
+  min-height: 100%;
 }
 .nav-btn{
   position: absolute;
@@ -385,6 +574,56 @@ a {
 .nav-btn-svg {
   fill: white;
   width: 3vw;
+}
+.PhotoCounter {
+  position: absolute;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-self: start;
+  justify-self: end;
+  font-family: var(--btfont);
+  font-size: 0.9vw;
+  font-weight: 300;
+  margin: 2.5vw;
+}
+.dotContainer {
+  position: absolute;
+  align-self: end;
+  gap: 0.35rem;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  margin: 2vw;
+}
+.dot, .dotActive, .dotInactive, .dotlessActive {
+  display: flex;
+  height: 0.5rem;
+  width: 0.5rem;
+  position: relative;
+  vertical-align: center;
+  /* min-width: 0.5rem; */
+  /* min-height: 0.5rem; */
+  /* margin: 0.15rem; */
+  border-radius: 5vw;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.2;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, height 0.4s, width 0.4s;
+}
+.dotActive {
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+}
+.dotInactive {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+.dotlessActive {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.2;
 }
 .left{
   align-self: center;
@@ -400,23 +639,25 @@ a {
   gap: 1.8vw;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   padding-top: 1vw;
-  max-width: 60vw;
+  max-width: var(--contentwidth);
 }
 .GalleryTitle,
 .ProjectTitle {
   mix-blend-mode: difference;
-  width: 60vw;
-  font-size: 6.4vw;
+  width: var(--contentwidth);
+  font-style: italic;
+  font-size: 5vw;
   font-family: var(--tfont);
 }
 .ProjectSubheading {
-  width: 60vw;
+  width: var(--contentwidth);
   font-size: 4.4vw;
   font-family: var(--tfont);
 }
 .galleryBox,
 .ProjectBox,
-.FilmContainer{
+.FilmContainer,
+.PhotoContainer{
   display: grid;
   flex-direction: column;
   border: var(--whiteborder);
@@ -426,12 +667,33 @@ a {
   max-height: fit-content;
   overflow: hidden;
 }
+
+.PhotoContainer{
+  display: flex;
+}
+.thumbnailCover{
+  display: flex;
+  overflow: clip;
+  border-bottom: var(--whiteborder);
+  border-radius: var(--whiteradius);
+}
 .thumbnail {
   width: 100%;
   aspect-ratio: auto;
-  z-index: 9;
   border-bottom: var(--whiteborder);
   border-radius: var(--whiteradius);
+}
+.thumbnailvideo {
+  position:absolute;
+  width: 100%;
+  object-fit: contain;
+  transform: initial;
+  border-bottom: var(--whiteborder);
+  border-radius: var(--whiteradius);
+}
+.thumbscale {
+  border-radius: 12vw;
+  filter:blur(20px);
 }
 .galleryText,
 .ProjectText{
@@ -439,7 +701,7 @@ a {
   padding: 0.7vw;
   font-size: 1.7vw;
   font-family: var(--bfont);
-  font-weight: 600;
+  font-weight: 500;
 }
 .ProjectText {
   mix-blend-mode: difference;
@@ -493,9 +755,44 @@ a {
   font-family: var(--tfont);
   font-size: 3.3vw;
 }
+.BackButtonUniversal {
+  background-color: rgba(0, 0, 0, 0);
+  fill: white;
+}
+.BackButtonSvg{
+  height: 1.3vw;
+}
+.BackButtonSvgBox{
+  width: 1.3vw;
+  height: 1.3vw;
+}
+.BackButtonUniversal, .BackButtonUniversalBox {
+  mix-blend-mode: difference;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: var(--pageradius);
+}
+.BackButtonUniversalBox {
+  padding: 0.2vw;
+  padding-left: 0.4vw;
+}
+.BackButtonOnVideo {
+  position: absolute;
+  display: flex;
+  align-self: start;
+  justify-self: start;
+  margin: 2vw;
+  z-index: 1;
+}
 .BackButton {
   position: fixed;
-  transform: translateX(-6vw);
+  transform: translateX(-5vw);
   display: flex;
   background-color: rgba(0, 0, 0, 0);
   color: white;
@@ -510,8 +807,18 @@ a {
   border: var(--whiteborder);
   border-radius: var(--whiteradius);
 }
-.BackText{
-  visibility: hidden;
+.BackText, .BackTextBox{
+  font-family: var(--btfont);
+  font-size: 1.1vw;
+  line-height: 0vw;
+  padding-right: 0.4vw;
+  padding-left: 0.4vw;
+}
+.BackTextBox {
+  font-weight: 500;
+}
+.BackText {
+  font-weight: 400;
 }
 .ProjectPageText {
   width: 80%;
@@ -530,14 +837,47 @@ a {
   margin-top: 1vw;
   margin-right: 1vw;
 }
+.VerticalScrolling{
+  display: flex;
+  flex-direction: row; 
+  gap: 1.5vw;
+  width: 75vw;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  box-sizing: border-box;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  margin-right: 1vw;
+  scroll-behavior: smooth;
+  scroll-snap-stop: always; 
+  /* Instagram-style snapping */
+  scroll-snap-type: x mandatory;
+  border-radius: var(--pageradius);
+}
+.VerticalScrolling::-webkit-scrollbar{
+  display: none;
+}
+.scrollarrow{
+  align-self: end;
+}
+
 .ZineScrolling {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .PresentationScrolling {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.PageVertical {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 75vw;
+  height: 100%;
+  align-items: end;
+  border-radius: var(--pageradius);
+}
 .Page {
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: end;
   border-radius: var(--pageradius);
@@ -560,50 +900,77 @@ a {
     --whiteradius: 2.6vw;
     --pageradius: 1vw;
   }
+  .Loading{
+    font-size: 10px;
+  }
   .title {
     font-size: 10.5vw;
+    padding-top: 6vw;
+    padding-bottom: 4vw;
+  }
+  .titleCustom {
+    font-size: 10.5vw;
+    padding-top: 6vw;
+    padding-bottom: 2vw;
+  }
+  .logoCustom {
+    max-width: 60vw;
+    padding-bottom: 6vw;
   }
   .textnphoto {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 5vw;
     width: 90vw;
   }
   .para {
-    font-size: 2.5vw;
-    width: 57vw;
+    text-wrap: balance;
+    flex-direction: column-reverse;
+    gap: 5vw;
+    font-size: 3.2vw;
+    line-height: 3.5vw;
+    width: 90vw;
   }
   .me {
-    width: 30vw;
-    height: 30vw;
+    width: 90vw;
+    height: 40vw;
+    object-fit: cover;
   }
   #BgVideo{
     transform: rotate(90deg);
     right: auto;
     max-width: 100vh;
   }
-  .cinematographyContainer{
-    max-width: 90vw;
-  }
-  .FilmGrid{
+  .PhotoGrid{
     max-width: 90vw;
     gap: 2.8vw;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 5vw;
   }
+  .FilmGrid{
+    max-width: 90vw;
+    gap: 2.8vw;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 5vw;
+  }
   .videotitle{
     font-size: 6vw;
   }
-  .videoplaynotice {
-  font-size: 1.5vh;
-  transform: translateY(3.5vh);
-  text-decoration: underline;
-}
   .timestamp{
     font-size: 3vw;
     margin: 3vw;
   }
   .FilmTitle{
-    font-size: 4vw;
-    padding:2vw ;
-    padding-bottom: 0;
+    font-size: 5vw;
+    padding: 4vw ;
+  }
+  .PhotoTitle {
+    font-size: 5vw;
+    padding: 1vw;
+    padding-top: 2vw;
+    padding-left: 0.8;
   }
   .videocover{
     max-width: 90vw;
@@ -611,11 +978,56 @@ a {
   .FilmContainer{
     margin-bottom: 3vw;
   }
+  .FilmTheatre {
+    height: auto;
+  }
   .cinematography{
     width: 90vw;
   }
   .FilmFullscreenSvg{
     width: 5vw;
+  }
+  .LostLifePage{
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: clip;
+  }
+  .ScrapsPage {
+    flex-direction: column;
+    max-width: 100vw;
+    overflow: clip;
+  }
+  .LostLifeSide {
+    padding: 8vw;
+    padding-top: 6vw;
+    gap: 5vw;
+  }
+  .ScrapsSide {
+    max-width: 90vw;
+    padding: 8vw;
+    padding-top: 6vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: 5vw;
+  }
+  .FilmPageTitle{
+    font-size: 10vw;
+    padding-top: 3vw;
+    line-height: 10vw;
+  }
+  .FilmPageSubtitle {
+    font-size: 3vw;
+  }
+  .FilmPageBody {
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
+  .FilmPageBody p{
+    margin: 0;
+    text-wrap: pretty;
+    font-size: 3.5vw;
+    font-family: var(--bfont);
   }
   .FilmFullscreen{
     margin: 3vw;
@@ -624,21 +1036,44 @@ a {
     opacity: 0;
   }
   .PhotoDisplayContainer{
-    width: 90vw;
+    max-width: 100vw;
+    min-width: 100vw;
+    min-height: 120vw;
+    max-height: 120vw;
+    border-right: none;
+    border-bottom: 3px solid oklch(0.2 0 0);
+  }
+  .dotContainer {
+    margin: 4vw;
+    gap: 1.2vw;
+  }
+  .dot, .dotActive, .dotInactive, .dotlessActive{
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+  .PhotoDisplayCaption{
+    font-size: 3.2vw;
+    line-height: 3.5vw;
+    margin-top: 3vw;
+    margin-bottom: 0;
+    margin-right: 5vw;
+    margin-left: 5vw;
   }
   .PhotoScroll{
-    max-width: 90vw;
+    max-width: 100vw;
   }
   .ImageBleed{
-    min-width: 90vw;
-    min-height: 50vh;
+    min-width: 100vw;
+    min-height: 100vw;
+    max-height: 120vw;
   }
   .PhotoDisplayImage{
-    max-height: 40vh;
-    max-width: 70vw;
+    max-height: 80vw;
+    max-width: 80vw;
+    border-radius: 1vw;
   }
   .nav-btn-svg{
-    width: 6vw;
+    width: 8vw;
   }
   .Gallery,
   .Projects {
@@ -754,6 +1189,26 @@ a {
   }
   .BackText{
     font-size:4vw;
+    padding-right: 2vw;
+  }
+  .BackButtonOnVideo{
+    margin: 4vw;
+  }
+  .BackButtonSvg{
+    width: 4vw;
+    height: 4vw;
+  }
+  .PhotoCounter {
+    position: absolute;
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    justify-self: end;
+    font-family: var(--btfont);
+    font-size: 3.5vw;
+    font-weight: 300;
+    margin: 6.7vw;
   }
   .material-symbols-outlined {
     font-size: 5vw;
